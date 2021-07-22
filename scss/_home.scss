@@ -1,0 +1,127 @@
+// main : main.scss
+.homepage {
+   //SEZIONE DEDICATA ALLA NAVBAR
+   .navbar {
+      @include navbar;
+      height: 10vh;
+      z-index: 10;
+      #logo {
+         width: 55px;
+      }
+      #menu_open {
+         font-size: 40px;
+      }
+      //parte relativa ai social
+      .social {
+         @include flex(row, row);
+         transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+         display: none;
+         padding: 30px;
+         i {
+            margin: 10px;
+            padding: 10px;
+         }
+      }
+   }
+   //SEZIONE DEDICATA ALLA PARTE SINISTRA DELLO SCHERMO
+   .hero_section {
+      height: 100vh;
+      padding: 15vh 0 2vh 0;
+      position: relative;
+      @include flex(row, row);
+      //stile hero ==> sinistra
+      .hero {
+         width: 10%;
+         @include flex1(center, center, column);
+         i {
+            margin: 20px;
+            cursor: pointer;
+            font-weight: 300;
+         }
+      }
+   }
+   //SEZIONE DEDICATA ALLA PARTE DESTRA DELLO SCHERMO
+   .hero1 {
+      width: 90%;
+      @include flex(row, column-reverse);
+      //stile generale dei due div
+      .sub-hero1 {
+         height: 100%;
+         width: 100%;
+      }
+      //div contenente il testo
+      .text {
+         padding-top: 10vh;
+         .title {
+            @include flex1(center, center, column);
+            h1 {
+               padding-top: 10px;
+               text-align: center;
+            }
+            sub {
+               color: $colore1;
+               padding-top: 5px;
+            }
+            p {
+               text-align: center;
+               padding-top: 12px;
+               padding: 10px;
+            }
+         }
+         .button {
+            @include flex1(center, center, row);
+            @include button(260px, 50px, $colore1, 4px);
+            margin: 0 auto;
+            margin-top: 30px;
+            cursor: pointer;
+         }
+         .scroll {
+            padding-top: 20px;
+            @include flex1(center, center, row);
+            cursor: pointer;
+            transition: 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            i,
+            p {
+               margin-right: 20px;
+            }
+         }
+      }
+      //div contenente l'immagine blob
+      .blob {
+         @include flex1(center, center, row);
+         .blob_svg {
+            width: 35vmax;
+            fill: $colore2;
+         }
+         .blob_image {
+            width: 140px;
+         }
+      }
+   }
+}
+@media (max-width: 768px) {
+   //nascondo la parte sinistra social e pulsante scroll
+   .homepage .hero_section .hero,
+   .homepage .hero1 .text .scroll {
+      display: none;
+   }
+   //blocco la parte social
+   .homepage .navbar .social {
+      display: block;
+   }
+   // larghezza massima alla parte destra su mobile
+   .homepage .hero_section .hero1 {
+      width: 100%;
+   }
+   .homepage .hero1 .blob .blob_svg {
+      width: 29vmax;
+   }
+   //tolgo il padding al div contenente il testo
+   .homepage .hero1 .text {
+      padding: 0;
+   }
+   //ridimensiono il bottone
+   .homepage .hero1 .text .button {
+      @include button(220px, 50px, $colore1, 4px);
+   }
+}
