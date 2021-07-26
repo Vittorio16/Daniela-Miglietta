@@ -152,7 +152,11 @@
   .homepage .hero1 .blob .blob_svg {
     width: 29vmax; }
   .homepage .hero1 .text {
-    padding: 0; }
+    padding: 0;
+    height: 120%; }
+  .homepage .hero1 .blob {
+    padding-top: 20px;
+    height: 80%; }
   .homepage .hero_section {
     padding: 35px 0 10px 0; }
   .homepage .hero1 .text .button {

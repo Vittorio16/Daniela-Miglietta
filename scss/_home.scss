@@ -116,9 +116,15 @@
    .homepage .hero1 .blob .blob_svg {
       width: 29vmax;
    }
-   //tolgo il padding al div contenente il testo
+   //tolgo il padding al div contenente il testo e lo allungo
    .homepage .hero1 .text {
       padding: 0;
+      height: 120%;
+   }
+   //tolgo il padding al div contenente il testo e lo allungo
+   .homepage .hero1 .blob {
+      padding-top: 20px;
+      height: 80%;
    }
    //tolgo il padding alla sezione principale per fare un homepage total height
    .homepage .hero_section {
