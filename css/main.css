@@ -41,18 +41,6 @@
     width: 55px; }
   .homepage .navbar #menu_open {
     font-size: 40px; }
-  .homepage .navbar .social {
-    display: flex;
-    flex-direction: row;
-    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    display: none;
-    padding: 30px; }
-    @media (max-width: 768px) {
-      .homepage .navbar .social {
-        flex-direction: row; } }
-    .homepage .navbar .social i {
-      margin: 10px;
-      padding: 10px; }
 
 .homepage .hero_section {
   height: 100vh;
@@ -69,10 +57,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column; }
-    .homepage .hero_section .hero i {
-      margin: 20px;
-      cursor: pointer;
-      font-weight: 300; }
 
 .homepage .hero1 {
   width: 90%;
@@ -96,7 +80,8 @@
         text-align: center; }
       .homepage .hero1 .text .title sub {
         color: #e7659d;
-        padding-top: 5px; }
+        padding-top: 5px;
+        font-size: 1.2rem; }
       .homepage .hero1 .text .title p {
         text-align: center;
         padding-top: 12px;
@@ -140,6 +125,22 @@
     .homepage .hero1 .blob .blob_image {
       width: 140px; }
 
+.homepage .social {
+  display: flex;
+  flex-direction: row;
+  display: none;
+  padding: 30px;
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .homepage .social {
+      flex-direction: row; } }
+  .homepage .social i {
+    margin: 10px;
+    padding: 10px; }
+    .homepage .social i:hover {
+      transform: scale(1.22);
+      transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045); }
+
 @media (max-width: 768px) {
   .homepage .hero_section .hero,
   .homepage .hero1 .text .scroll {
@@ -152,6 +153,8 @@
     width: 29vmax; }
   .homepage .hero1 .text {
     padding: 0; }
+  .homepage .hero_section {
+    padding: 35px 0 10px 0; }
   .homepage .hero1 .text .button {
     width: 220px;
     height: 50px;

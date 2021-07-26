@@ -11,17 +11,6 @@
       #menu_open {
          font-size: 40px;
       }
-      //parte relativa ai social
-      .social {
-         @include flex(row, row);
-         transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-         display: none;
-         padding: 30px;
-         i {
-            margin: 10px;
-            padding: 10px;
-         }
-      }
    }
    //SEZIONE DEDICATA ALLA PARTE SINISTRA DELLO SCHERMO
    .hero_section {
@@ -33,11 +22,6 @@
       .hero {
          width: 10%;
          @include flex1(center, center, column);
-         i {
-            margin: 20px;
-            cursor: pointer;
-            font-weight: 300;
-         }
       }
    }
    //SEZIONE DEDICATA ALLA PARTE DESTRA DELLO SCHERMO
@@ -61,6 +45,7 @@
             sub {
                color: $colore1;
                padding-top: 5px;
+               font-size: 1.2rem;
             }
             p {
                text-align: center;
@@ -98,6 +83,21 @@
          }
       }
    }
+   //SEZIONE DEDICATA ALLA PAETE SOCIAL
+   .social {
+      @include flex(row, row);
+      display: none;
+      padding: 30px;
+      cursor: pointer;
+      i {
+         margin: 10px;
+         padding: 10px;
+         &:hover {
+            transform: scale(1.22);
+            transition: 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+         }
+      }
+   }
 }
 @media (max-width: 768px) {
    //nascondo la parte sinistra social e pulsante scroll
@@ -119,6 +119,10 @@
    //tolgo il padding al div contenente il testo
    .homepage .hero1 .text {
       padding: 0;
+   }
+   //tolgo il padding alla sezione principale per fare un homepage total height
+   .homepage .hero_section {
+      padding: 35px 0 10px 0;
    }
    //ridimensiono il bottone
    .homepage .hero1 .text .button {
