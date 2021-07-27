@@ -22,6 +22,7 @@ function menu() {
       }
    };
 }
+
 //funzione per lo scroll al clicco di quel bottone
 function funzione_scroll() {
    let button = document.querySelector(".scroll");
@@ -70,3 +71,4 @@ function funzione_animazioneScroll() {
 //richiamo funzioni
 funzione_scroll();
 menu();
+funzione_animazioneScroll();
