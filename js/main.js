@@ -6,7 +6,7 @@ function menu() {
    //click del bottone
    button.onclick = () => {
       const y = window.pageYOffset;
-      if (y < 100) {
+      if (y < 50) {
          menu.classList.toggle("active");
       } else {
          menu.classList.toggle("active1");
@@ -15,7 +15,7 @@ function menu() {
    //nav colorata allo scroll
    window.onscroll = () => {
       const y = window.pageYOffset;
-      if (y >= 100) {
+      if (y >= 50) {
          nav.classList.add("active-nav");
       } else {
          nav.classList.remove("active-nav");
