@@ -47,7 +47,6 @@
       height: 100%;
       width: 100%;
       //backdrop-filter: blur(25px);
-      background: $colore4;
       @include flex1(center, center, column);
       transition: all 0.4s cubic-bezier(0.55, 0.055, 0.675, 0.39);
       z-index: 1000001;
@@ -60,9 +59,19 @@
          }
       }
    }
+   //classe active
    .active {
       left: 0;
+      background: white;
    }
+   .active1 {
+      left: 0;
+      background: $colore2;
+      a {
+         color: white;
+      }
+   }
+   //media
    @media (max-width: 678px) {
       padding: 10px 20px 10px 20px;
    }
