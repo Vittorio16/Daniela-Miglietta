@@ -55,6 +55,18 @@ i {
    font-size: 25px;
 }
 //CLASSI DA AGGIUNGERE IN JS
+//classe active per navbar
+.active {
+   left: 0;
+   background: white;
+}
+.active1 {
+   left: 0;
+   background: $colore2;
+   a {
+      color: white;
+   }
+}
 .ov {
-   overflow: hidden;
+   overflow-y: hidden;
 }

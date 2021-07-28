@@ -1,11 +1,11 @@
 //funzione per il menu
 function menu() {
-   let button = document.querySelector("#menu_open");
-   let nav = document.querySelector(".navbar");
-   let menu = nav.querySelector("ul");
+   let body, button, nav, menu;
+   (body = document.body), (button = document.querySelector("#menu_open")), (nav = document.querySelector(".navbar")), (menu = nav.querySelector("ul"));
    //click del bottone
    button.onclick = () => {
       const y = window.pageYOffset;
+      body.classList.toggle("ov");
       if (y < 50) {
          menu.classList.toggle("active");
       } else {
