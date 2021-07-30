@@ -1,99 +1,397 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!--META TAG FOR SEO-->
-      <meta name="description" content="" />
-      <meta name="keywords" content="Lecce,biologa,nutrizionista,dieta,perdere peso,mangiare bene, dietologa lecce" />
-      <!--FAVICON-->
-      <!--TITOLO E LINK CSS-->
-      <title>Daniela Miglietta</title>
-      <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-      <link rel="stylesheet" href="/css/main.css" />
+      <meta charset="utf-8" />
+      <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+      <title>iPortfolio Bootstrap Template - Index</title>
+      <meta content="" name="description" />
+      <meta content="" name="keywords" />
+      <!-- Vendor CSS Files -->
+      <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+      <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+      <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+      <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" />
+      <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+      <link rel="stylesheet" href="/assets/css/style.css" />
    </head>
    <body>
-      <div class="homepage">
-         <!--NAVBAR-->
-         <div class="navbar">
-            <img src="/assets/homepage/logo.svg" alt="" id="logo" />
-            <!--Parte relativa al menu a comparsa-->
-            <ul>
-               <li><a href="">Home</a></li>
-               <li><a href="">About</a></li>
-               <li><a href="">Prenota</a></li>
-               <!--Parte relativa ai social (solo mobile)-->
-               <div class="social">
-                  <i class="uil uil-instagram"></i>
-                  <i class="uil uil-facebook-f"></i>
-                  <i class="uil uil-whatsapp"></i>
+      <!-- ======= Bottone per menu responsive ======= -->
+      <div class="mobile">
+         <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bx bx-menu"></i></button>
+      </div>
+
+      <!-- ======= Header ======= -->
+      <header id="header">
+         <div class="d-flex flex-column">
+            <div class="profile">
+               <img src="assets/img/about/user.png" alt="" class="img-fluid rounded-circle" />
+               <h1 class="text-light"><a href="index.html">Dott. Daniela Miglietta</a></h1>
+               <div class="social-links mt-3 text-center">
+                  <a href="#" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                  <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                </div>
-            </ul>
-            <i class="uil uil-subject" id="menu_open"></i
-            ><!--Icona per aprire il menu-->
-         </div>
-         <!--HERO SECTION-->
-         <div class="hero_section">
-            <!--Sezione sinistra dello schermo relativa ai social(solo desktop)-->
-            <div class="hero social animazione-zoom">
-               <i class="uil uil-instagram"></i>
-               <i class="uil uil-facebook-f"></i>
-               <i class="uil uil-whatsapp"></i>
             </div>
-            <!--Parte destra dello schermo-->
-            <div class="hero1">
-               <!--Parte relativa al testo-->
-               <div class="sub-hero1 text">
-                  <div class="title">
-                     <h1>Dott.essa Daniela Miglietta</h1>
-                     <sub>Biologa nutrizionista</sub>
+            <!--nav -->
+            <nav class="nav-menu">
+               <ul>
+                  <li class="active">
+                     <a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a>
+                  </li>
+                  <li>
+                     <a href="#about"><i class="bx bx-user"></i> <span>About</span></a>
+                  </li>
+                  <li>
+                     <a href="#libro"><i class="bx bx-book"></i> <span>Il mio libro</span></a>
+                  </li>
+                  <li>
+                     <a href="#services"><i class="bx bx-server"></i> Services</a>
+                  </li>
+                  <li>
+                     <a href="#contact"><i class="bx bx-envelope"></i> Contact</a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+      </header>
+      <!-- ======= Hero Section ======= -->
+      <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+         <h1>Dott. Daniela Miglietta</h1>
+         <p>Mi occupo di <span class="typed" data-typed-items="Nutrizione,ciao"></span></p>
+         <div class="hero-button">
+            <a href="#" class="bottone">Compra il mio libro</a>
+            <a href="#" class="bottone">Prenota una consulenza</a>
+         </div>
+      </section>
+      <main id="main">
+         <!-- ======= Sezione about ======= -->
+         <section id="about" class="about">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4" data-aos="fade-right">
+                     <img src="assets/img/about/about.jpg" class="img-fluid" alt="" />
+                  </div>
+                  <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                     <h3>Più su di me...</h3>
                      <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim aperiam ea nisi dicta! Lorem ipsum dolor sit, amet consectetur
-                        adipisicing elit. Enim aperiam ea nisi dicta! adipisicing elit. Enim aperiam ea nisi dicta!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur debitis neque quasi culpa quam maiores dignissimos magni illo nulla
+                        voluptas? Recusandae consequuntur iste optio deleniti veritatis a voluptas omnis voluptatibus! Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Aperiam voluptatem non maxime cumque pariatur animi error eligendi exercitationem. Quis in accusantium tempore nam
+                        amet dolor deleniti beatae, dicta incidunt dolorum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, fugit assumenda
+                        veritatis consequatur suscipit cupiditate eaque? Libero, consequatur ipsum! Quam maxime, ullam odio similique in aliquam est
+                        reprehenderit ipsam illo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestias minus harum amet nesciunt quibusdam
+                        quisquam ea. Dolor sint quasi accusamus iure! Vel quisquam similique eligendi laboriosam, dolore deserunt commodi.
+                     </p>
+                     <div class="hero-button">
+                        <a href="#" class="bottone">Compra il mio libro</a>
+                        <a href="#" class="bottone">Prenota una consulenza</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ======= Resume Section ======= -->
+         <section id="resume" class="resume">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6" data-aos="fade-up">
+                     <h3 class="resume-title">Sumary</h3>
+                     <div class="resume-item pb-0">
+                        <h4>Alex Smith</h4>
+                        <p>
+                           <em
+                              >Innovative and deadline-driven Graphic Designer with 3+ years of experience designing and developing user-centered digital/print
+                              marketing material from initial concept to final, polished deliverable.</em
+                           >
+                        </p>
+                        <ul>
+                           <li>Portland par 127,Orlando, FL</li>
+                           <li>(123) 456-7891</li>
+                           <li>alice.barkley@example.com</li>
+                        </ul>
+                     </div>
+
+                     <h3 class="resume-title">Education</h3>
+                     <div class="resume-item">
+                        <h4>Master of Fine Arts &amp; Graphic Design</h4>
+                        <h5>2015 - 2016</h5>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <p>
+                           Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
+                           nerada porti sand markend
+                        </p>
+                     </div>
+                     <div class="resume-item">
+                        <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+                        <h5>2010 - 2014</h5>
+                        <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                        <p>
+                           Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates
+                           asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila
+                        </p>
+                     </div>
+                  </div>
+                  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                     <h3 class="resume-title">Professional Experience</h3>
+                     <div class="resume-item">
+                        <h4>Senior graphic design specialist</h4>
+                        <h5>2019 - Present</h5>
+                        <p><em>Experion, New York, NY </em></p>
+                        <ul>
+                           <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                           <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project.</li>
+                           <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                           <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                        </ul>
+                     </div>
+                     <div class="resume-item">
+                        <h4>Graphic design specialist</h4>
+                        <h5>2017 - 2018</h5>
+                        <p><em>Stepping Stone Advertising, New York, NY</em></p>
+                        <ul>
+                           <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                           <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                           <li>Recommended and consulted with clients on the most appropriate graphic design</li>
+                           <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- ======= Sezione dedicata al libro ======= -->
+         <section id="libro">
+            <div class="container">
+               <div class="photo">
+                  <img src="/assets/img/libro/libro.png" alt="" class="img-fluid" />
+               </div>
+               <div class="video">
+                  <i class="bx bx-play-circle"></i>
+               </div>
+               <div class="photo">
+                  <img src="/assets/img/libro/testa.svg" alt="" class="img-fluid" />
+               </div>
+            </div>
+         </section>
+         <!-- ======= Sezione servizi ======= -->
+         <section id="services" class="services">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+                     <div class="icon"><i class="icofont-computer"></i></div>
+                     <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                     <p class="description">
+                        Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident
                      </p>
                   </div>
-                  <!--Parte relativa ai bottoni-->
-                  <div class="button"><p>Prenota una consulenza</p></div>
-                  <div class="button"><p>Compra il libro</p></div>
-                  <div class="scroll">
-                     <i class="uil uil-mouse-alt"></i>
-                     <p>Scrorri per scoprire di più</p>
-                     <i class="uil uil-angle-down"></i>
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                     <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+                     <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                     <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                     <div class="icon"><i class="icofont-earth"></i></div>
+                     <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                     <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+                     <div class="icon"><i class="icofont-image"></i></div>
+                     <h4 class="title"><a href="">Magni Dolores</a></h4>
+                     <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+                     <div class="icon"><i class="icofont-settings"></i></div>
+                     <h4 class="title"><a href="">Nemo Enim</a></h4>
+                     <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                  </div>
+                  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+                     <div class="icon"><i class="icofont-tasks-alt"></i></div>
+                     <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+                     <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
                   </div>
                </div>
-               <!--Parte relativa alla foto(blob)-->
-               <div class="sub-hero1 blob">
-                  <!--blob e immagine-->
-                  <svg class="blob_svg" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                     <mask id="mask0" mask-type="alpha">
-                        <path
-                           d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                         130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                         97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                         0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                        />
-                     </mask>
-                     https://github.com/Vittorio16/Daniela-Miglietta/
-                     <g mask="url(#mask0)">
-                        <path
-                           d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                         165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                         129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                         -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-                        />
-                        <image class="blob_image" x="12" y="18" href="/assets/homepage/img_blob.png" />
-                     </g>
-                  </svg>
+            </div>
+         </section>
+         <!-- ======= recensione ======= -->
+         <section id="testimonials" class="testimonials section-bg">
+            <div class="container">
+               <div class="owl-carousel testimonials-carousel">
+                  <div class="testimonial-item" data-aos="fade-up">
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam
+                        eget nibh et. Maecen aliquam, risus at semper.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                     <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                     <h3>Saul Goodman</h3>
+                     <h4>Ceo &amp; Founder</h4>
+                  </div>
+
+                  <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt
+                        aliqua noster fugiat irure amet legam anim culpa.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                     <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                     <h3>Sara Wilsson</h3>
+                     <h4>Designer</h4>
+                  </div>
+
+                  <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster
+                        aute amet eram fore quis sint minim.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                     <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                     <h3>Jena Karlis</h3>
+                     <h4>Store Owner</h4>
+                  </div>
+
+                  <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum
+                        anim magna sunt elit fore quem dolore labore illum veniam.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                     <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="" />
+                     <h3>Matt Brandon</h3>
+                     <h4>Freelancer</h4>
+                  </div>
+
+                  <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum
+                        cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                     <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                     <h3>John Larson</h3>
+                     <h4>Entrepreneur</h4>
+                  </div>
                </div>
             </div>
+         </section>
+         <!-- ======= Contact Section ======= -->
+         <section id="contact" class="contact">
+            <div class="container">
+               <div class="row" data-aos="fade-in">
+                  <div class="col-lg-5 d-flex align-items-stretch">
+                     <div class="info">
+                        <div class="address">
+                           <i class="icofont-google-map"></i>
+                           <h4>Location:</h4>
+                           <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+
+                        <div class="email">
+                           <i class="icofont-envelope"></i>
+                           <h4>Email:</h4>
+                           <p>info@example.com</p>
+                        </div>
+
+                        <div class="phone">
+                           <i class="icofont-phone"></i>
+                           <h4>Call:</h4>
+                           <p>+1 5589 55488 55s</p>
+                        </div>
+
+                        <iframe
+                           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                           frameborder="0"
+                           style="border: 0; width: 100%; height: 290px"
+                           allowfullscreen
+                        ></iframe>
+                     </div>
+                  </div>
+
+                  <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                     <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-row">
+                           <div class="form-group col-md-6">
+                              <label for="name">Your Name</label>
+                              <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validate"></div>
+                           </div>
+                           <div class="form-group col-md-6">
+                              <label for="name">Your Email</label>
+                              <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validate"></div>
+                           </div>
+                        </div>
+                        <div class="form-group">
+                           <label for="name">Subject</label>
+                           <input
+                              type="text"
+                              class="form-control"
+                              name="subject"
+                              id="subject"
+                              data-rule="minlen:4"
+                              data-msg="Please enter at least 8 chars of subject"
+                           />
+                           <div class="validate"></div>
+                        </div>
+                        <div class="form-group">
+                           <label for="name">Message</label>
+                           <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                           <div class="validate"></div>
+                        </div>
+                        <div class="mb-3">
+                           <div class="loading">Loading</div>
+                           <div class="error-message"></div>
+                           <div class="sent-message">Your message has been sent. Thank you!</div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Contact Section -->
+      </main>
+      <!-- End #main -->
+
+      <!-- ======= Footer ======= -->
+      <footer id="footer">
+         <div class="container">
+            <div class="copyright">
+               &copy; Copyright <strong><span>iPortfolio</span></strong>
+            </div>
+            <div class="credits">
+               <!-- All the links in the footer should remain intact. -->
+               <!-- You can delete the links only if you purchased the pro version. -->
+               <!-- Licensing information: https://bootstrapmade.com/license/ -->
+               <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+               Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
          </div>
-         <!--About-->
-         <div class="gfg" style="height: 100vh"></div>
-      </div>
+      </footer>
+      <!-- End  Footer -->
+
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/jquery/jquery.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+      <script src="assets/vendor/php-email-form/validate.js"></script>
+      <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+      <script src="assets/vendor/counterup/counterup.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/venobox/venobox.min.js"></script>
+      <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+      <script src="assets/vendor/typed.js/typed.min.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
    </body>
-   <!--js-->
-   <script src="/js/scrollreveal.js"></script>
-   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-   <script src="/js/main.js"></script>
 </html>
