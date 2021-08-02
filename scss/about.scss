@@ -1,0 +1,51 @@
+#about {
+   height: auto;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   max-width: 1300px;
+   margin: 0 auto;
+   //sezione foto
+   .about_foto {
+      width: 40%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+         width: 60%;
+         height: auto;
+         border-radius: 8px;
+      }
+   }
+   //about text
+   .about_text {
+      width: 60%;
+      height: auto;
+      h2 {
+         text-align: center;
+         font-weight: bold;
+         padding: 20px;
+         color: var(--text);
+      }
+      p {
+         color: var(--text);
+         padding: 40px;
+         text-align: justify;
+      }
+   }
+   .bottoni {
+      padding: 20px;
+   }
+}
+
+@media (max-width: 678px) {
+   #about {
+      flex-direction: column-reverse;
+      width: 100%;
+      .about_foto,
+      .about_text {
+         width: 100%;
+      }
+   }
+}

@@ -1,0 +1,39 @@
+#about {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  max-width: 1300px;
+  margin: 0 auto; }
+  #about .about_foto {
+    width: 40%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #about .about_foto img {
+      width: 60%;
+      height: auto;
+      border-radius: 8px; }
+  #about .about_text {
+    width: 60%;
+    height: auto; }
+    #about .about_text h2 {
+      text-align: center;
+      font-weight: bold;
+      padding: 20px;
+      color: var(--text); }
+    #about .about_text p {
+      color: var(--text);
+      padding: 40px;
+      text-align: justify; }
+  #about .bottoni {
+    padding: 20px; }
+
+@media (max-width: 678px) {
+  #about {
+    flex-direction: column-reverse;
+    width: 100%; }
+    #about .about_foto,
+    #about .about_text {
+      width: 100%; } }

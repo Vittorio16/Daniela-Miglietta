@@ -1,0 +1,76 @@
+main {
+  margin-left: 280px; }
+
+main.active {
+  margin-left: 0; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 280px;
+  background: var(--header);
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  /*menu*/ }
+  .header h1,
+  .header a,
+  .header p,
+  .header li {
+    color: var(--bg); }
+  .header .info {
+    margin: 10px; }
+    .header .info img {
+      margin: 10px auto;
+      display: block;
+      width: 120px;
+      border: 6px solid var(--colore);
+      border-radius: 50%;
+      transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      cursor: pointer; }
+    .header .info h1 {
+      text-align: center; }
+    .header .info .social {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .header .info .social i {
+        padding: 10px;
+        background: var(--bg);
+        margin: 15px;
+        border-radius: 8px; }
+        .header .info .social i:hover {
+          background: var(--text);
+          color: var(--bg); }
+  .header ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px; }
+    .header ul li {
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      align-items: center; }
+      .header ul li i {
+        color: #b6b8c9;
+        font-weight: bold;
+        cursor: pointer; }
+      .header ul li a span {
+        margin-left: 40px;
+        color: var(--bg);
+        font-weight: 300; }
+
+#homepage {
+  width: 100%;
+  height: 100vh;
+  background: url(/assets/homepage/hero-bg.jpg) no-repeat center center;
+  background-size: cover; }
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0; }
+  .header {
+    display: none; } }
