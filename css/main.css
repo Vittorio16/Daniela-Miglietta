@@ -1,19 +1,19 @@
 /*import file css*/
 @import url(/css/home.css);
 @import url(/css/about.css);
-
 /*import file css delle librerie*/
 @import url("/librerie/boxicons/css/boxicons.min.css");
-
 /*iimport font*/
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"); /*font-family: 'Baloo 2', cursive;*/
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"); /*font-family: 'Libre Baskerville', serif;*/
-
 /*impostazioni generali*/
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+}
+html {
+   scroll-behavior: smooth;
 }
 /*variabili e cambio tema*/
 html[data-theme="light"] {
