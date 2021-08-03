@@ -41,7 +41,8 @@ main.active {
         padding: 10px;
         background: var(--bg);
         margin: 15px;
-        border-radius: 8px; }
+        border-radius: 8px;
+        transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
         .header .info .social i:hover {
           background: var(--text);
           color: var(--bg); }

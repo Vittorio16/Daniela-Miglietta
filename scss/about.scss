@@ -13,7 +13,7 @@
       align-items: center;
       justify-content: center;
       img {
-         width: 60%;
+         width: 80%;
          height: auto;
          border-radius: 8px;
       }
@@ -25,27 +25,29 @@
       h2 {
          text-align: center;
          font-weight: bold;
-         padding: 20px;
+         padding: 10px;
          color: var(--text);
       }
       p {
          color: var(--text);
-         padding: 40px;
+         padding: 20px;
          text-align: justify;
       }
    }
-   .bottoni {
-      padding: 20px;
-   }
 }
 
-@media (max-width: 678px) {
+@media (max-width: 1200px) {
    #about {
       flex-direction: column-reverse;
       width: 100%;
       .about_foto,
       .about_text {
          width: 100%;
+      }
+      .about_foto {
+         img {
+            width: 60%;
+         }
       }
    }
 }

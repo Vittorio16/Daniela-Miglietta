@@ -23,7 +23,6 @@ html[data-theme="light"] {
    --bg: hsl(0, 0%, 100%);
    --text: hsl(0, 0%, 0%);
    /*colori specifici*/
-   --text-B: hsl(0, 0%, 0%);
    --header: hsl(278, 31%, 35%);
 }
 html[data-theme="dark"] {
@@ -32,7 +31,6 @@ html[data-theme="dark"] {
    --bg: hsl(0, 0%, 0%);
    --text: hsl(0, 0%, 100%);
    /*colori specifici*/
-   --text-B: hsl(0, 0%, 100%);
    --header: hsl(0, 0%, 100%);
 }
 body {
@@ -112,7 +110,7 @@ i {
    align-items: center;
    justify-content: center;
    padding: 12px;
-   color: var(--text-B);
+   color: hsl(0, 0%, 100%);
    background: var(--colore1);
    border: none;
    border-radius: 5px;
@@ -122,6 +120,7 @@ i {
 }
 .bottone:hover {
    border: 5px solid var(--colore);
+   color: var(--text);
    background: none;
    font-weight: bold;
 }
