@@ -30,4 +30,16 @@ function menu() {
       }
    };
 }
+function type() {
+   new Typed("#typed", {
+      strings: ["Nutrizionista", "Biologa"],
+      typeSpeed: 120,
+      delaySpeed: 300,
+      backSpeed: 50,
+      backDelay: 1300,
+      loop: true,
+   });
+}
+//richiamo le funzioni
 menu();
+type();
