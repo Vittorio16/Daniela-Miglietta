@@ -21,7 +21,7 @@ main {
    a,
    p,
    li {
-      color: var(--bg);
+      color: hsl(0, 0%, 100%);
    }
    //div info
    .info {
@@ -76,10 +76,24 @@ main {
          }
          a span {
             margin-left: 40px;
-            color: var(--bg);
+            color: hsl(0, 0%, 100%);
             font-weight: 300;
          }
       }
+   }
+   //cambio tema
+   #light,
+   #dark {
+      padding: 10px;
+      font-size: 25px;
+      color: hsl(60, 61%, 56%);
+      cursor: pointer;
+      display: none;
+   }
+   #light.active,
+   #dark.active {
+      display: block;
+      margin: 0 auto;
    }
 }
 //header mob

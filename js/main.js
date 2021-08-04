@@ -40,6 +40,35 @@ function type() {
       loop: true,
    });
 }
+function theme() {
+   //bottoni
+   let light = document.querySelector("#light");
+   let dark = document.querySelector("#dark");
+   let bottoni = [dark, light];
+   //cambio tema in base al tema del dispositivo
+   let change = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+   //condizione per far comparire il bottone giusto
+   if (change.matches == true) {
+      dark.classList.add("active");
+      light.classList.remove("active");
+   } else {
+      dark.classList.remove("active");
+      light.classList.add("active");
+   }
+   //clicco bottone dark
+   bottoni[0].onclick = () => {
+      document.body.setAttribute("data-theme", "light");
+      dark.classList.remove("active");
+      light.classList.add("active");
+   };
+   //clicco bottone light
+   bottoni[1].onclick = () => {
+      document.body.setAttribute("data-theme", "dark");
+      light.classList.remove("active");
+      dark.classList.add("active");
+   };
+}
 //richiamo le funzioni
 menu();
 type();
+theme();

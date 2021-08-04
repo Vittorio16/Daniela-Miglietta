@@ -20,7 +20,7 @@ main {
   .header a,
   .header p,
   .header li {
-    color: var(--bg); }
+    color: white; }
   .header .info {
     margin: 10px; }
     .header .info img {
@@ -62,8 +62,19 @@ main {
         cursor: pointer; }
       .header ul li a span {
         margin-left: 40px;
-        color: var(--bg);
+        color: white;
         font-weight: 300; }
+  .header #light,
+  .header #dark {
+    padding: 10px;
+    font-size: 25px;
+    color: #d3d34a;
+    cursor: pointer;
+    display: none; }
+  .header #light.active,
+  .header #dark.active {
+    display: block;
+    margin: 0 auto; }
 
 .header-mob {
   width: 100%;

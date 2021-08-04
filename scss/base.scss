@@ -9,7 +9,7 @@
 html {
    scroll-behavior: smooth;
 }
-/*variabili e cambio tema*/
+//variabili
 :root {
    --colore: hsl(278, 31%, 35%);
    --colore1: hsl(339, 73%, 65%);
@@ -18,31 +18,31 @@ html {
    /*colori specifici*/
    --header: hsl(278, 31%, 35%);
 }
+//dark o light al caricamento
 @media (prefers-color-scheme: dark) {
    :root {
-      --colore: hsl(339, 73%, 65%);
-      --colore1: hsl(278, 31%, 35%);
+      --colore: hsl(278, 31%, 35%);
+      --colore1: hsl(339, 73%, 65%);
       --bg: hsl(0, 0%, 0%);
       --text: hsl(0, 0%, 100%);
-      /*colori specifici*/
-      --header: hsl(0, 0%, 100%);
    }
 }
-
-/*html[data-theme="light"] {
+//dark o light al click
+body[data-theme="light"] {
    --colore: hsl(278, 31%, 35%);
    --colore1: hsl(339, 73%, 65%);
    --bg: hsl(0, 0%, 100%);
    --text: hsl(0, 0%, 0%);
+   /*colori specifici*/
    --header: hsl(278, 31%, 35%);
 }
-html[data-theme="dark"] {
-   --colore: hsl(339, 73%, 65%);
-   --colore1: hsl(278, 31%, 35%);
+//dark o light al click
+body[data-theme="dark"] {
+   --colore: hsl(278, 31%, 35%);
+   --colore1: hsl(339, 73%, 65%);
    --bg: hsl(0, 0%, 0%);
    --text: hsl(0, 0%, 100%);
-   --header: hsl(0, 0%, 100%);
-}*/
+}
 body {
    color: var(--text);
    scroll-behavior: smooth;
@@ -86,7 +86,7 @@ li,
 span {
    color: var(--text);
    text-decoration: none;
-   font-size: calc(0.4rem + 0.7vmin);
+   font-size: calc(0.5rem + 1vmin);
 }
 p {
    font-family: sans-serif;
