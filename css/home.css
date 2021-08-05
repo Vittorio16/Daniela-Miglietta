@@ -96,7 +96,8 @@ main {
       transform: translateY(-50%);
       cursor: pointer;
       color: var(--bg);
-      font-size: 30px; }
+      font-size: 30px;
+      font-weight: bold; }
 
 #homepage {
   width: 100%;

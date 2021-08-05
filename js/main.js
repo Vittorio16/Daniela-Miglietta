@@ -4,7 +4,8 @@ function menu() {
    let header = document.querySelector(".header"); //header
    let header_mob = document.querySelector(".header-mob"); //header mobile
    let button = header_mob.querySelector(".button i"); //bottone
-   let menu = document.querySelectorAll(".menu ul li a");
+   let menu = document.querySelectorAll(".menu ul li a"); //menu
+   let main = document.querySelector("main");
    //clicco del bottone
    button.onclick = () => {
       header.classList.toggle("active");
@@ -20,6 +21,12 @@ function menu() {
          body.classList.remove("active");
       };
    });
+   //clicco punto morto
+   main.onclick = () => {
+      header.classList.remove("active");
+      button.classList.remove("bx-x");
+      body.classList.remove("active");
+   };
    //allo scroll aggiungere e rimuovere background header mobile
    window.onscroll = () => {
       const y = window.pageYOffset;
