@@ -21,8 +21,6 @@
         #servizi .ser .services .card .bg {
           width: 100%;
           height: 250px;
-          background: url(/assets/servizi/1.png) no-repeat center top;
-          background-size: cover;
           border-radius: 8px;
           position: relative; }
           #servizi .ser .services .card .bg::after {
@@ -34,6 +32,15 @@
             height: 40px;
             border-radius: 50%;
             background: var(--colore); }
+        #servizi .ser .services .card #primo {
+          background: url(/assets/servizi/1.png) no-repeat center top;
+          background-size: cover; }
+        #servizi .ser .services .card #secondo {
+          background: url(/assets/servizi/2.png) no-repeat center top;
+          background-size: cover; }
+        #servizi .ser .services .card #terzo {
+          background: url(/assets/servizi/3.png) no-repeat center top;
+          background-size: cover; }
         #servizi .ser .services .card .content {
           color: var(--bg);
           display: flex;
@@ -47,6 +54,24 @@
             text-align: center; }
           #servizi .ser .services .card .content .bottone:hover {
             color: var(--bg); }
+      #servizi .ser .services #approfondimento {
+        border-radius: 8px; }
+        #servizi .ser .services #approfondimento .hero-bg {
+          width: 100%;
+          height: 100%;
+          background: url(/assets/servizi/1.png) no-repeat center top #585858;
+          background-size: cover;
+          background-blend-mode: multiply;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 7px; }
+          #servizi .ser .services #approfondimento .hero-bg .bottone {
+            padding: 20px;
+            text-align: center; }
+            #servizi .ser .services #approfondimento .hero-bg .bottone:hover {
+              color: white;
+              border-color: var(--colore1); }
 
 @media (max-width: 768px) {
   #servizi {
@@ -56,6 +81,9 @@
       flex-direction: column;
       padding: 10px; }
       #servizi .ser .services .card {
-        width: 100%; }
+        width: 100%;
+        height: auto; }
         #servizi .ser .services .card .bg {
-          height: 180px; } }
+          height: 180px; }
+      #servizi .ser #approfondimento {
+        height: 200px; } }
