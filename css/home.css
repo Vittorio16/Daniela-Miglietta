@@ -130,7 +130,7 @@ main {
         border-bottom: 4px solid var(--colore1); }
 
 /*media*/
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   main {
     margin-left: 0; }
   .header-mob {

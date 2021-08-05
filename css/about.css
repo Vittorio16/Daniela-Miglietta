@@ -81,6 +81,43 @@
           font-weight: bolder;
           margin: 10px; }
 
+/*sezione libro*/
+#libro {
+  height: auto;
+  width: 90%;
+  margin: 0 auto; }
+  #libro .container {
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+    background-color: var(--colore);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px; }
+    #libro .container .foto {
+      padding: 20px;
+      height: auto;
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #libro .container .foto img {
+        width: 36vmin; }
+    #libro .container .play {
+      font-size: 50px;
+      cursor: pointer;
+      color: var(--bg); }
+
+@media (max-width: 600px) {
+  #libro .container {
+    flex-direction: column; }
+    #libro .container .play {
+      padding: 15px; }
+    #libro .container .foto {
+      padding: 15px; } }
+
 @media (max-width: 1200px) {
   #about {
     flex-direction: column-reverse;

@@ -103,7 +103,8 @@ i {
   border-radius: 5px;
   transition: 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19);
   margin: 20px;
-  font-size: 14px; }
+  font-size: 14px;
+  cursor: pointer; }
 
 .bottone:hover {
   border: 4px solid var(--colore);

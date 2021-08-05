@@ -107,6 +107,52 @@
       }
    }
 }
+/*sezione libro*/
+#libro {
+   height: auto;
+   width: 90%;
+   margin: 0 auto;
+   .container {
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+      padding: 25px;
+      background-color: var(--colore);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      //stile foto
+      .foto {
+         padding: 20px;
+         height: auto;
+         flex: 2;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         img {
+            width: 36vmin;
+         }
+      }
+      //play button
+      .play {
+         font-size: 50px;
+         cursor: pointer;
+         color: var(--bg);
+      }
+   }
+}
+@media (max-width: 600px) {
+   #libro .container {
+      flex-direction: column;
+      .play {
+         padding: 15px;
+      }
+      .foto {
+         padding: 15px;
+      }
+   }
+}
 @media (max-width: 1200px) {
    #about {
       flex-direction: column-reverse;
