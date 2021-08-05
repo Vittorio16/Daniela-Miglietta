@@ -32,10 +32,10 @@ function menu() {
 }
 function type() {
    new Typed("#typed", {
-      strings: ["Nutrizionista", "Biologa"],
+      strings: ["Nutrizionista", "Biologa", "Ciao"],
       typeSpeed: 120,
       delaySpeed: 300,
-      backSpeed: 50,
+      backSpeed: 70,
       backDelay: 1300,
       loop: true,
    });

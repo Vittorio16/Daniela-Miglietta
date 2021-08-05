@@ -4,7 +4,7 @@
    width: 100%;
    display: flex;
    flex-direction: row;
-   max-width: 1300px;
+   max-width: 90%;
    margin: 0 auto;
    //sezione foto
    .about_foto {
@@ -54,7 +54,7 @@
          border-left: 2px solid var(--colore1);
          padding: 0 0 20px 20px;
          flex: 1;
-         margin: 10px 0 0 10px;
+         margin: 10px 0 50px 10px;
          position: relative;
          &::before {
             content: "";
