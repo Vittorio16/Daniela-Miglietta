@@ -43,6 +43,12 @@ body {
   background: var(--bg);
   transition: 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335); }
 
+body.active {
+  overflow: hidden; }
+
+body.noScroll {
+  overflow: hidden; }
+
 /*selezione e scroll*/
 ::selection {
   color: black;
@@ -96,6 +102,10 @@ i {
   padding: 5px;
   transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06); }
 
+/*stile section*/
+section {
+  padding: 30px 15px; }
+
 /*bottone*/
 .bottone {
   width: auto;
@@ -118,6 +128,54 @@ i {
   background: none;
   font-weight: bold; }
 
-/*stile section*/
-section {
-  padding: 30px 15px; }
+.modal-hero {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100000;
+  color: var(--bg); }
+  .modal-hero .modale {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    background: var(--text);
+    margin: 30px;
+    border-radius: 5px;
+    opacity: 1; }
+    .modal-hero .modale h1 {
+      text-align: center;
+      font-size: calc(19px + (38 - 19) * ((100vw - 320px) / (1600 - 300)));
+      padding: 10px;
+      color: var(--colore1); }
+    .modal-hero .modale p {
+      padding: 10px;
+      text-align: center; }
+    .modal-hero .modale .bottoni {
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .modal-hero .modale .bottoni .exit {
+        background: red; }
+        .modal-hero .modale .bottoni .exit:hover {
+          border: none;
+          background: red;
+          color: white; }
+      .modal-hero .modale .bottoni .send {
+        background: #38ac38; }
+        .modal-hero .modale .bottoni .send:hover {
+          border: none;
+          background: #38ac38;
+          color: white; }
+  @media (max-width: 300px) {
+    .modal-hero .bottoni {
+      flex-direction: column; }
+      .modal-hero .bottoni .bottone {
+        margin: 10px;
+        width: 120px; } }

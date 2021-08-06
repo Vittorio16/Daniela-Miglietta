@@ -49,6 +49,12 @@ body {
    background: var(--bg);
    transition: 0.2s cubic-bezier(0.6, 0.04, 0.98, 0.335);
 }
+body.active {
+   overflow: hidden; //tolgo lo scroll al clicco del bottone
+}
+body.noScroll {
+   overflow: hidden; //tolgo lo scroll al clicco del bottone
+}
 /*selezione e scroll*/
 ::selection {
    color: black;
@@ -105,6 +111,10 @@ i {
    padding: 5px;
    transition: 0.2s cubic-bezier(0.755, 0.05, 0.855, 0.06);
 }
+/*stile section*/
+section {
+   padding: 30px 15px;
+}
 
 /*bottone*/
 .bottone {
@@ -128,7 +138,71 @@ i {
    background: none;
    font-weight: bold;
 }
-/*stile section*/
-section {
-   padding: 30px 15px;
+//stile modale
+.modal-hero {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.7);
+   z-index: 100000;
+   color: var(--bg);
+   .modale {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      margin: 0 auto;
+      background: var(--text);
+      margin: 30px;
+      border-radius: 5px;
+      opacity: 1;
+      //stile content
+      h1 {
+         text-align: center;
+         font-size: calc(19px + (38 - 19) * ((100vw - 320px) / (1600 - 300)));
+         padding: 10px;
+         color: var(--colore1);
+      }
+      p {
+         padding: 10px;
+         text-align: center;
+      }
+      //stile bottoni
+      .bottoni {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         //stile bottone rosso
+         .exit {
+            background: hsl(0, 100%, 50%);
+            &:hover {
+               border: none;
+               background: hsl(0, 100%, 50%);
+               color: hsl(0, 0%, 100%);
+            }
+         }
+         //stile bottone verde
+         .send {
+            background: rgb(56, 172, 56);
+            &:hover {
+               border: none;
+               background: rgb(56, 172, 56);
+               color: hsl(0, 0%, 100%);
+            }
+         }
+      }
+   }
+   @media (max-width: 300px) {
+      .bottoni {
+         flex-direction: column;
+         .bottone {
+            margin: 10px;
+            width: 120px;
+         }
+      }
+   }
 }

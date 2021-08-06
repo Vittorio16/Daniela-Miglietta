@@ -82,6 +82,13 @@
             #servizi .ser .services #approfondimento .hero-bg .bottone:hover {
               color: white;
               border-color: var(--colore1); }
+  #servizi .modal-hero {
+    opacity: 0;
+    top: -100%;
+    transition: 0.3s ease-in; }
+  #servizi .modal-hero.active {
+    opacity: 1;
+    top: 0; }
 
 @media (max-width: 768px) {
   #servizi {

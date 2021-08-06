@@ -1,6 +1,6 @@
+let body = document.body;
 //menu mobile
 function menu() {
-   let body = document.body;
    let header = document.querySelector(".header"); //header
    let header_mob = document.querySelector(".header-mob"); //header mobile
    let button = header_mob.querySelector(".button i"); //bottone
@@ -75,7 +75,28 @@ function theme() {
       dark.classList.add("active");
    };
 }
+function modale() {
+   //elementi servizi
+   let servizi = document.querySelector("#servizi");
+   let buttonServizi = servizi.querySelectorAll(".ser .bottone");
+   //elemeneti modali
+   let modale = document.querySelector(".modal-hero");
+   let modaleButton = modale.querySelector(".exit");
+   //far comparire il modale
+   buttonServizi.forEach((bottone) => {
+      bottone.onclick = () => {
+         modale.classList.add("active");
+         body.classList.add("noScroll");
+      };
+   });
+   //far scomparire il modale
+   modaleButton.onclick = () => {
+      modale.classList.remove("active");
+      body.classList.remove("noScroll");
+   };
+}
 //richiamo le funzioni
 menu();
 type();
 theme();
+modale();

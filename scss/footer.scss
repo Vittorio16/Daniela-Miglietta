@@ -107,6 +107,16 @@
          }
       }
    }
+   //modale
+   .modal-hero {
+      opacity: 0;
+      top: -100%;
+      transition: 0.3s ease-in;
+   }
+   .modal-hero.active {
+      opacity: 1;
+      top: 0;
+   }
 }
 
 @media (max-width: 768px) {
