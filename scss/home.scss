@@ -156,6 +156,19 @@ main {
             border-bottom: 4px solid var(--colore1);
          }
       }
+      .button-hero {
+         padding: 15px;
+         width: 300px;
+         max-width: 220px;
+         position: relative;
+         z-index: 2;
+         &:hover {
+            border: none;
+            background: var(--colore1);
+            color: hsl(0, 0%, 100%);
+            font-weight: lighter;
+         }
+      }
    }
 }
 

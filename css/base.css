@@ -128,6 +128,12 @@ section {
   background: none;
   font-weight: bold; }
 
+@media (max-width: 768px) {
+  .bottone:hover {
+    border: none;
+    background: var(--colore1);
+    color: white; } }
+
 .modal-hero {
   width: 100%;
   height: 100%;

@@ -94,6 +94,11 @@ function modale() {
       modale.classList.remove("active");
       body.classList.remove("noScroll");
    };
+   //far scomparire il modale al clicco su una parte nulla
+   modale.onclick = () => {
+      modale.classList.remove("active");
+      body.classList.remove("noScroll");
+   };
 }
 //richiamo le funzioni
 menu();

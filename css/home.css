@@ -129,6 +129,17 @@ main {
         color: var(--colore1);
         margin-bottom: 5px;
         border-bottom: 4px solid var(--colore1); }
+    #homepage .hero .button-hero {
+      padding: 15px;
+      width: 300px;
+      max-width: 220px;
+      position: relative;
+      z-index: 2; }
+      #homepage .hero .button-hero:hover {
+        border: none;
+        background: var(--colore1);
+        color: white;
+        font-weight: lighter; }
 
 /*media*/
 @media (max-width: 1024px) {

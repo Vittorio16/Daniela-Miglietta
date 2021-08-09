@@ -138,6 +138,13 @@ section {
    background: none;
    font-weight: bold;
 }
+@media (max-width: 768px) {
+   .bottone:hover {
+      border: none;
+      background: var(--colore1);
+      color: hsl(0, 0%, 100%);
+   }
+}
 //stile modale
 .modal-hero {
    width: 100%;

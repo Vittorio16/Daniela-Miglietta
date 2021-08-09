@@ -21,7 +21,6 @@
             flex-direction: column;
             transition: 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
             //stile della card interna(flex direction)
-
             //stile background card
             .bg {
                width: 100%;
@@ -118,6 +117,7 @@
       top: 0;
    }
 }
+//recensioni
 
 @media (max-width: 768px) {
    #servizi {
