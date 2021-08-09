@@ -12,9 +12,10 @@
     align-items: center;
     justify-content: center; }
     #about .about_foto img {
-      width: 80%;
+      width: 75%;
       height: auto;
-      border-radius: 8px; }
+      border-radius: 8px;
+      cursor: pointer; }
   #about .about_text {
     width: 60%;
     height: auto; }
