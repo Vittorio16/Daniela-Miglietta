@@ -81,20 +81,6 @@ main {
          }
       }
    }
-   //cambio tema
-   #light,
-   #dark {
-      padding: 10px;
-      font-size: 25px;
-      color: hsl(60, 61%, 56%);
-      cursor: pointer;
-      display: none;
-   }
-   #light.active,
-   #dark.active {
-      display: block;
-      margin: 0 auto;
-   }
 }
 //header mob
 .header-mob {
@@ -122,6 +108,29 @@ main {
       }
    }
 }
+//cambio tema
+.change {
+   display: flex;
+   align-items: center;
+   font-weight: bold;
+   margin-top: 40px;
+   span {
+      color: hsl(0, 0%, 100%);
+   }
+   #light,
+   #dark {
+      padding: 20px;
+      font-size: 28px;
+      color: hsl(60, 61%, 56%);
+      cursor: pointer;
+      display: none;
+   }
+   #light.active,
+   #dark.active {
+      display: block;
+   }
+}
+
 //homepage
 #homepage {
    width: 100%;
@@ -214,6 +223,31 @@ main {
       }
       .typed-cursor {
          display: none;
+      }
+   }
+}
+@media (max-width: 768px) {
+   .header {
+      //aggiusto il div top con l'altezza nav
+      .info {
+         padding: 6vh 0 0 0;
+         margin: 2px;
+         //nascondo l'h1 (daniela miglietta)
+         h1 {
+            display: none;
+         }
+         //riduco l'immagine
+         img {
+            width: 90px;
+         }
+      }
+      //aggiusto il div del cambio tema
+      .change {
+         margin-top: 0;
+      }
+      //riduco lo spazio tra i li
+      ul li {
+         margin: 6px;
       }
    }
 }

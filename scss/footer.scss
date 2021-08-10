@@ -109,16 +109,15 @@
    //modale
    .modal-hero {
       opacity: 0;
-      top: -100%;
-      transition: 0.3s ease-in;
+      left: -100%;
+      transition: 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
    }
    .modal-hero.active {
+      left: 0;
       opacity: 1;
-      top: 0;
    }
 }
 //recensioni
-
 @media (max-width: 768px) {
    #servizi {
       //width 100%
