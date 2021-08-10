@@ -140,7 +140,6 @@ main {
       padding: 15px;
       width: 300px;
       max-width: 220px;
-      position: relative;
       z-index: 2; }
       #homepage .hero .button-hero:hover {
         border: none;
@@ -179,7 +178,10 @@ main {
     padding: 0;
     margin: 0; }
   #homepage .typed-cursor {
-    display: none; } }
+    display: none; }
+  #homepage .button-hero {
+    position: absolute;
+    top: 65vh; } }
 
 @media (max-width: 768px) {
   .header .info {

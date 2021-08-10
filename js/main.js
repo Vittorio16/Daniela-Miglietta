@@ -39,7 +39,7 @@ function menu() {
 }
 function type() {
    new Typed("#typed", {
-      strings: ["Testo1", "Test2", "Testo3, Testo4"],
+      strings: ["Dimagrimento rapido", "Dimagrimento localizzato", "Dimagrimento duraturo"],
       typeSpeed: 120,
       delaySpeed: 300,
       backSpeed: 70,

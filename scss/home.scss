@@ -169,7 +169,6 @@ main {
          padding: 15px;
          width: 300px;
          max-width: 220px;
-         position: relative;
          z-index: 2;
          &:hover {
             border: none;
@@ -223,6 +222,10 @@ main {
       }
       .typed-cursor {
          display: none;
+      }
+      .button-hero {
+         position: absolute;
+         top: 65vh;
       }
    }
 }
