@@ -1,145 +1,42 @@
-#servizi {
+//FORM
+//FOOTER
+#footer {
    height: auto;
+   background: var(--text);
+   color: var(--bg);
    display: flex;
+   justify-content: center;
+   align-items: center;
    flex-direction: column;
-   max-width: 90%;
-   margin: 0 auto;
-   .ser {
-      flex: 1;
+   padding: 10px;
+   span,
+   a,
+   i,
+   p {
+      color: var(--bg);
+      padding: 5px;
+      border-radius: 5px;
+   }
+   .social {
+      padding-top: 10px;
       display: flex;
-      .services {
-         flex: 1;
-         margin: 10px;
-         //stile card
-         .card {
-            width: 70%;
-            height: 90%;
-            margin: 10px auto;
-            background: var(--text);
-            border-radius: 8px;
-            display: flex;
-            flex-direction: column;
-            transition: 0.3s cubic-bezier(0.68, 0.55, 0.265, 1.55);
-            //stile della card interna(flex direction)
-            //stile background card
-            .bg {
-               width: 100%;
-               height: 250px;
-               border-radius: 8px;
-               position: relative;
-               &::after {
-                  content: "";
-                  position: absolute;
-                  top: 10px;
-                  right: 10px;
-                  width: 40px;
-                  height: 40px;
-                  border-radius: 50%;
-                  background: var(--text);
-                  border: 2px solid var(--colore1);
-                  z-index: 100;
-               }
-               &::before {
-                  content: url(/assets/loghi/logo.png);
-                  position: absolute;
-                  right: 15px;
-                  width: 40px;
-                  z-index: 101;
-                  top: 10px;
-               }
-            }
-            //sfondo per ogni card
-            #primo {
-               background: url(/assets/servizi/1.png) no-repeat center top;
-               background-size: cover;
-            }
-            #secondo {
-               background: url(/assets/servizi/2.png) no-repeat center top;
-               background-size: cover;
-            }
-            #terzo {
-               background: url(/assets/servizi/3.png) no-repeat center top;
-               background-size: cover;
-            }
-            //stile content
-            .content {
-               color: var(--bg);
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               flex-direction: column;
-               padding: 20px;
-               h3 {
-                  margin-bottom: 5px;
-               }
-               p {
-                  text-align: center;
-               }
-               //stile bottone
-               .bottone:hover {
-                  color: var(--bg);
-               }
-            }
-         }
-         //card di approfondimento
-         #approfondimento {
-            border-radius: 8px;
-            .hero-bg {
-               width: 100%;
-               height: 100%;
-               background: url(/assets/servizi/1.png) no-repeat center top #585858;
-               background-size: cover;
-               background-blend-mode: multiply;
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               border-radius: 7px;
-               .bottone {
-                  padding: 20px;
-                  text-align: center;
-                  &:hover {
-                     color: hsl(0, 0%, 100%);
-                     border-color: var(--colore1);
-                  }
-               }
-            }
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      a {
+         margin: 15px;
+         i {
+            font-size: 25px;
          }
       }
-   }
-   //modale
-   .modal-hero {
-      opacity: 0;
-      left: -100%;
-      transition: 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-   }
-   .modal-hero.active {
-      left: 0;
-      opacity: 1;
-   }
-}
-//recensioni
-@media (max-width: 768px) {
-   #servizi {
-      //width 100%
-      max-width: 100%;
-      margin: 0;
-      //sezioni column
-      .ser {
-         flex-direction: column;
-         padding: 10px;
-         //card al 100%
-         .services .card {
-            width: 100%;
-            height: auto;
-            //altezza bg
-            .bg {
-               height: 180px;
-            }
-         }
-         //stile sezione approfondimento
-         #approfondimento {
-            height: 200px;
-         }
+      .whatsapp:hover {
+         background-color: hsl(128, 52%, 51%);
+      }
+      .instagram:hover {
+         background-color: hsl(351, 81%, 58%);
+      }
+      .facebook:hover {
+         background-color: hsl(221, 44%, 41%);
       }
    }
 }

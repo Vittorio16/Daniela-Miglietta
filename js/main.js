@@ -75,6 +75,25 @@ function theme() {
       dark.classList.add("active");
    };
 }
+function video() {
+   let play, container, video, remove;
+   container = document.querySelector(".video-container");
+   play = document.querySelector(".play"); //pulsante play
+   remove = document.querySelector("#remove"); // pulsante remove
+   video = container.querySelector("video");
+   //clicco pulsante play
+   play.onclick = () => {
+      container.classList.add("active");
+      body.classList.add("noScroll");
+      video.play();
+   };
+   //clicco pulsante remove
+   remove.onclick = () => {
+      container.classList.remove("active");
+      body.classList.remove("noScroll");
+      video.pause();
+   };
+}
 function modale() {
    //elementi servizi
    let servizi = document.querySelector("#servizi");
@@ -143,5 +162,7 @@ function funzione_animazioneScroll() {
 menu();
 type();
 theme();
+video();
+recensioni();
 modale();
 funzione_animazioneScroll();
