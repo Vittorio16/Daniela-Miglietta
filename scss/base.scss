@@ -38,7 +38,8 @@ html {
       //grandezza link
       span,
       li,
-      a {
+      a,
+      input {
          color: var(--text);
          text-decoration: none;
          font-size: calc(0.5rem + 1vmin);
@@ -183,6 +184,8 @@ body[data-theme="light"] {
    --text: hsl(0, 0%, 0%);
    /*colori specifici*/
    --header: hsl(278, 31%, 35%);
+   --shadow: rgba(0, 0, 0, 0.53);
+   --calendar: url(/assets/form/calendar.svg);
 }
 //VARIABILI PER TEMA DARK
 body[data-theme="dark"] {
@@ -190,6 +193,9 @@ body[data-theme="dark"] {
    --colore1: hsl(339, 73%, 65%);
    --bg: hsl(0, 0%, 0%);
    --text: hsl(0, 0%, 100%);
+   //colori specifici
+   --shadow: rgba(99, 99, 99, 0.8);
+   --calendar: url(/assets/form/calendar1.svg);
 }
 /*SELEZIONE E SCROLLBAR PERSONALIZATI*/
 ::selection {
@@ -211,4 +217,7 @@ body[data-theme="dark"] {
    background: #ffffff;
    border-radius: 8px;
    box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+::-webkit-calendar-picker-indicator {
+   background-image: var(--calendar); //cambiare icona data
 }

@@ -1,6 +1,6 @@
 let body = document.body;
 //menu mobile
-function menu() {
+const menu = () => {
    let header = document.querySelector(".header"); //header
    let header_mob = document.querySelector(".header-mob"); //header mobile
    let button = header_mob.querySelector(".button i"); //bottone
@@ -36,8 +36,8 @@ function menu() {
          header_mob.classList.remove("active");
       }
    };
-}
-function type() {
+};
+const type = () => {
    new Typed("#typed", {
       strings: ["Dimagrimento rapido", "Dimagrimento localizzato", "Dimagrimento duraturo"],
       typeSpeed: 120,
@@ -46,8 +46,8 @@ function type() {
       backDelay: 1300,
       loop: true,
    });
-}
-function theme() {
+};
+const theme = () => {
    //bottoni
    let light = document.querySelector("#light");
    let dark = document.querySelector("#dark");
@@ -74,8 +74,8 @@ function theme() {
       light.classList.remove("active");
       dark.classList.add("active");
    };
-}
-function video() {
+};
+const video = () => {
    let play, container, video, remove;
    container = document.querySelector(".video-container");
    play = document.querySelector(".play"); //pulsante play
@@ -93,8 +93,8 @@ function video() {
       body.classList.remove("noScroll");
       video.pause();
    };
-}
-function modale() {
+};
+const modale = () => {
    //elementi servizi
    let servizi = document.querySelector("#servizi");
    let buttonServizi = servizi.querySelectorAll(".ser .bottone");
@@ -118,9 +118,11 @@ function modale() {
       modale.classList.remove("active");
       body.classList.remove("noScroll");
    };
-}
-//funzione animazioneScroll
-function funzione_animazioneScroll() {
+};
+const form = () => {
+   console.log("ciao");
+};
+const funzione_animazioneScroll = () => {
    ScrollReveal().reveal(".animazione", {
       easing: "cubic-bezier(.215,.61,.355,1)",
       interval: 450,
@@ -157,12 +159,12 @@ function funzione_animazioneScroll() {
       interval: 1050,
       duration: 2300,
    });
-}
+};
 //richiamo le funzioni
 menu();
 type();
 theme();
 video();
-recensioni();
 modale();
 funzione_animazioneScroll();
+form();

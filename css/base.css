@@ -30,7 +30,8 @@ html {
         transition: 0.4s cubic-bezier(0.895, 0.03, 0.685, 0.22); }
     html body span,
     html body li,
-    html body a {
+    html body a,
+    html body input {
       color: var(--text);
       text-decoration: none;
       font-size: calc(0.5rem + 1vmin);
@@ -141,13 +142,17 @@ body[data-theme="light"] {
   --bg: hsl(0, 0%, 100%);
   --text: hsl(0, 0%, 0%);
   /*colori specifici*/
-  --header: hsl(278, 31%, 35%); }
+  --header: hsl(278, 31%, 35%);
+  --shadow: rgba(0, 0, 0, 0.53);
+  --calendar: url(/assets/form/calendar.svg); }
 
 body[data-theme="dark"] {
   --colore: hsl(278, 31%, 35%);
   --colore1: hsl(339, 73%, 65%);
   --bg: hsl(0, 0%, 0%);
-  --text: hsl(0, 0%, 100%); }
+  --text: hsl(0, 0%, 100%);
+  --shadow: rgba(99, 99, 99, 0.8);
+  --calendar: url(/assets/form/calendar1.svg); }
 
 /*SELEZIONE E SCROLLBAR PERSONALIZATI*/
 ::selection {
@@ -169,3 +174,6 @@ body[data-theme="dark"] {
   background: #ffffff;
   border-radius: 8px;
   box-shadow: inset 7px 10px 12px #f0f0f0; }
+
+::-webkit-calendar-picker-indicator {
+  background-image: var(--calendar); }

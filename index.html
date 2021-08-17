@@ -14,9 +14,14 @@
             <img src="/assets/about/user.webp" alt="" />
             <h1><a href="index.html">Dott. Daniela Miglietta</a></h1>
             <div class="social">
-               <a target="black" href="https://wa.me/393283418657" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
-               <a target="black" href="https://www.instagram.com/dott.daniela_miglietta/" class="instagram"><i class="bx bxl-instagram"></i></a>
-               <a target="black" href="https://www.facebook.com/nutrizionistadott.ssadanielamiglietta/" class="facebook"><i class="bx bxl-facebook"></i></a>
+               <div>
+                  <a target="black" href="https://www.instagram.com/dott.daniela_miglietta/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                  <a target="black" href="https://www.facebook.com/nutrizionistadott.ssadanielamiglietta/" class="facebook"><i class="bx bxl-facebook"></i></a>
+               </div>
+               <div>
+                  <a target="black" href="https://wa.me/393283418657" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                  <a target="black" href="https://www.google.com/search?q=dottoressa+daniela+miglietta&rlz=1C1RXQR_itIT932IT932&oq=dott&aqs=chrome.0.69i59j69i57j69i59l2j69i60j69i61l2j69i60.879j0j9&sourceid=chrome&ie=UTF-8" class="facebook"> <i class='bx bxl-google'></i></a>
+               </div>
             </div>
             <div class="change">
                <i class='bx bx-moon' id="light"></i>
@@ -240,18 +245,43 @@
                   <div class="bottoni">
                      <div class="bottone exit">Chiudi</div>
                      <div class="bottone send">
-                        <a href="/page/servizi.html" target="_blank" rel="noopener noreferrer">Si proseguo</a>
+                        <a href="/page/servizi.html"  rel="noopener noreferrer">Si proseguo</a>
                      </div>
                   </div>
                </div>
             </div>
           </section>
-          <!--sezione recensioni-->
-          <section id="recensioni">
-            <div class="container_recensioni">
-            </div>
-          </section>
           <!--sezione form-->
+          <section id="form">
+             <div class="container">
+                <div class="container_info"></div>
+                <div class="container_form">
+                   <form action="" method="get">
+                      <!--nome e cognome-->
+                      <div class="parti">
+                        <input type="text"  placeholder="Nome e cognome">
+                        <span class="errore">Il campo deve essere compilato</span>
+                      </div>
+                      <!--telefono-->
+                      <div class="parti">
+                        <input type="tel"  placeholder="Numero di telefono" pattern="^((00|\+)39[\. ]??)??3\d{2}[\. ]??\d{6,7}$">
+                        <span class="errore">Numero di telefono invalido</span>
+                      </div>
+                      <!--numero-->
+                      <div class="parti">
+                        <input type="number"  placeholder="Numero dei richiedenti">
+                      </div>
+                      <!--Data-->
+                      <div class="parti">
+                        <input type="date">
+                        <span class="errore">Il campo deve essere compilato</span>
+                      </div>
+                      <!--bottone send-->
+                      <button type="submit" class="bottone">Invia la prenotazione</button>
+                   </form>
+                </div>
+             </div>
+          </section>
           <!--Sezione footer-->
           <section id="footer">
           <span>Copyrights – 2022 <b>Dott Daniela Miglietta</b></span> 

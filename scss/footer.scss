@@ -1,4 +1,91 @@
 //FORM
+#form {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   .container {
+      background: var(--text);
+      color: var(--bg);
+      border-radius: 5px;
+      width: 100%;
+      max-width: 1300px;
+      height: 600px;
+      display: flex;
+      box-shadow: 2px 3px 12px 3px var(--shadow);
+      //STILE CONTAINER INFO
+      .container_info {
+         flex: 1;
+      }
+      //STILE CONTAINER FORM
+      .container_form {
+         flex: 1;
+         background: var(--bg);
+         position: relative;
+         &:before {
+            content: "";
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background: var(--bg);
+            transform: rotate(45deg);
+            top: 50px;
+            left: -13px;
+         }
+         //stile form
+         form {
+            width: 100%;
+            height: 100%;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            .parti {
+               width: 100%;
+               position: relative;
+               //stile input
+               input {
+                  width: 100%;
+                  outline: none;
+                  border: 3px solid var(--colore);
+                  background: none;
+                  padding: 13px 18px;
+                  margin: 20px 0px 10px 0px;
+                  color: var(--text);
+                  font-weight: 400;
+                  letter-spacing: 0.7px;
+                  border-radius: 6px;
+                  text-align: center;
+                  &::placeholder {
+                     color: var(--text);
+                  }
+               }
+               span {
+                  color: hsl(0, 100%, 50%);
+                  font-size: calc(0.4rem + 0.8vmin);
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+               }
+            }
+            //bottone send
+            .bottone {
+               background: rgb(56, 172, 56);
+               color: hsl(0, 0%, 100%);
+               max-width: 200px;
+               margin: 20px auto;
+               padding: 20px;
+               font-weight: 600;
+               border-radius: 8px;
+               &:hover {
+                  font-weight: 600;
+                  border: none;
+                  transform: scale(1.1);
+               }
+            }
+         }
+      }
+   }
+}
 //FOOTER
 #footer {
    height: auto;
@@ -37,6 +124,19 @@
       }
       .facebook:hover {
          background-color: hsl(221, 44%, 41%);
+      }
+   }
+}
+
+//MEDIA
+@media (max-width: 768px) {
+   .container {
+      flex-direction: column;
+      //STILE CONTAINER FORM
+      .container_form {
+         &:before {
+            display: none; //nascondo il triangolino
+         }
       }
    }
 }
