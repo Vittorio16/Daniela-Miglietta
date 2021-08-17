@@ -166,6 +166,7 @@ html {
    --text: hsl(0, 0%, 0%);
    /*colori specifici*/
    --header: hsl(278, 31%, 35%);
+   --calendar: url(/assets/form/calendar.svg);
 }
 //TEMA PREDEFINITO AL CARICAMENTO DEL BROWSER
 @media (prefers-color-scheme: dark) {
@@ -174,6 +175,7 @@ html {
       --colore1: hsl(339, 73%, 65%);
       --bg: hsl(0, 0%, 0%);
       --text: hsl(0, 0%, 100%);
+      --calendar: url(/assets/form/calendar1.svg);
    }
 }
 //VARIABILI PER TEMA LIGHT
