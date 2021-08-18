@@ -224,3 +224,6 @@ body[data-theme="dark"] {
    background-image: var(--calendar); //cambiare icona data
    cursor: pointer;
 }
+input[type="date"]:focus::-webkit-datetime-edit {
+   color: var(--text) !important;
+}

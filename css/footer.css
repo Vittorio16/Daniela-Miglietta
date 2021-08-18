@@ -36,8 +36,6 @@
         #form .container .container_form form .parti {
           width: 100%;
           position: relative; }
-          #form .container .container_form form .parti #data {
-            cursor: pointer; }
           #form .container .container_form form .parti input {
             width: 100%;
             outline: none;
@@ -56,6 +54,25 @@
               color: var(--text); }
           #form .container .container_form form .parti input.active {
             border: 3px solid #cc0000; }
+          #form .container .container_form form .parti #data {
+            cursor: pointer;
+            color: var(--bg);
+            transition: none; }
+          #form .container .container_form form .parti #data.color {
+            color: var(--text); }
+          #form .container .container_form form .parti .place {
+            position: absolute;
+            color: var(--text);
+            height: 100%;
+            left: 50%;
+            top: 50%;
+            font-weight: bold;
+            z-index: 1;
+            transform: translate(-50%, -5%);
+            visibility: visible;
+            cursor: pointer; }
+          #form .container .container_form form .parti .place.togli {
+            visibility: hidden; }
         #form .container .container_form form .errore {
           color: white;
           font-size: calc(0.4rem + 0.8vmin);

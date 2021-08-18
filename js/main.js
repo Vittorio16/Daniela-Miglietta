@@ -120,29 +120,35 @@ const modale = () => {
       body.classList.remove("noScroll");
    };
 };
-const validate = () => {
-   let name, tel, number, data, form, errore;
+const form = () => {
+   let name, tel, number, data, form, errore, place;
+   //dichiarazioni variabili
    form = document.querySelector("form");
    error = document.querySelector(".errore");
+   place = document.querySelector(".place");
    input = form.querySelectorAll("input");
    //input particolari
    name = form.querySelector("#name");
    tel = form.querySelector("#tel");
    number = form.querySelector("#persone");
    data = form.querySelector("#data");
-   //type data transform
-   data.onfocus = () => {
-      data.type = "date";
+
+   //funzione relativa al placeholder dell'input data
+   const dateValidator = () => {
+      data.onfocus = () => {
+         place.classList.add("togli");
+      };
+      data.onblur = () => {
+         if (data.value == "") {
+            place.classList.remove("togli");
+         } else {
+            data.classList.add("color");
+         }
+      };
    };
-   form.onsubmit = () => {
-      //evento input
-      console.log(data.value);
-      input.forEach((single) => {
-         single.onfocus = () => {
-            single.classList.remove("active");
-            error.classList.remove("active");
-         };
-      });
+
+   //funzione relativa alla validazione
+   const validate = () => {
       //switch controllo
       switch (true) {
          //Controllo tutti i campi
@@ -163,6 +169,25 @@ const validate = () => {
             break;
       }
    };
+
+   //funzione relativa alla  scomparsa dei bordi
+   const errori = () => {
+      input.forEach((single) => {
+         single.onfocus = () => {
+            single.classList.remove("active");
+            error.classList.remove("active");
+            place.classList.add("togli");
+         };
+      });
+   };
+
+   //sumbit al form
+   form.onsubmit = () => {
+      errori();
+      return validate();
+   };
+   //richiamo date Validator
+   dateValidator();
 };
 const funzione_animazioneScroll = () => {
    ScrollReveal().reveal(".animazione", {
@@ -209,4 +234,4 @@ theme();
 video();
 modale();
 funzione_animazioneScroll();
-validate();
+form();
