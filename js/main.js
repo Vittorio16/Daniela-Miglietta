@@ -131,7 +131,7 @@ const validate = () => {
    number = form.querySelector("#persone");
    data = form.querySelector("#data");
    //type data transform
-   data.onclick = () => {
+   data.onfocus = () => {
       data.type = "date";
    };
    form.onsubmit = () => {
