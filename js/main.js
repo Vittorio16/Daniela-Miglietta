@@ -197,15 +197,15 @@ const funzione_animazioneScroll = () => {
    });
    ScrollReveal().reveal(".animazione-bottom", {
       easing: "cubic-bezier(.215,.61,.355,1)",
-      distance: "60px",
+      distance: "120px",
       interval: 450,
-      duration: 2000,
+      duration: 800,
    });
    ScrollReveal().reveal(".animazione-zoom", {
       easing: "cubic-bezier(.215,.61,.355,1)",
-      interval: 650,
+      interval: 250,
       scale: 0.1,
-      delay: 550,
+      delay: 300,
    });
    ScrollReveal().reveal(".animazione-zoomreverse", {
       easing: "cubic-bezier(.215,.61,.355,1)",
@@ -215,16 +215,16 @@ const funzione_animazioneScroll = () => {
    });
    ScrollReveal().reveal(".animazione-libro", {
       easing: "cubic-bezier(.93,.03,0,1)",
-      interval: 450,
+      interval: 350,
       scale: 0.05,
-      delay: 350,
+      delay: 550,
    });
 
    ScrollReveal().reveal(".animazione-resume", {
       easing: "cubic-bezier(.215,.61,.355,1)",
       distance: "120px",
-      interval: 1050,
-      duration: 2300,
+      interval: 500,
+      duration: 550,
    });
 };
 //richiamo le funzioni
