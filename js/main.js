@@ -36,6 +36,7 @@ const menu = () => {
          header_mob.classList.remove("active");
       }
    };
+   //swipe per aprire il menu
 };
 const type = () => {
    new Typed("#typed", {
@@ -119,8 +120,49 @@ const modale = () => {
       body.classList.remove("noScroll");
    };
 };
-const form = () => {
-   console.log("ciao");
+const validate = () => {
+   let name, tel, number, data, form, errore;
+   form = document.querySelector("form");
+   error = document.querySelector(".errore");
+   input = form.querySelectorAll("input");
+   //input particolari
+   name = form.querySelector("#name");
+   tel = form.querySelector("#tel");
+   number = form.querySelector("#persone");
+   data = form.querySelector("#data");
+   //type data transform
+   data.onclick = () => {
+      data.type = "date";
+   };
+   form.onsubmit = () => {
+      //evento input
+      console.log(data.value);
+      input.forEach((single) => {
+         single.onfocus = () => {
+            single.classList.remove("active");
+            error.classList.remove("active");
+         };
+      });
+      //switch controllo
+      switch (true) {
+         //Controllo tutti i campi
+         case name.value == "" || tel.value == "" || number.value == "" || data.value == "":
+            input.forEach((single) => {
+               single.classList.add("active");
+            });
+            error.classList.add("active");
+            error.innerText = "Compila tutti i campi";
+            return false;
+            break;
+         //controllo la validità del numero di telefono
+         case !tel.value.match(/^((00|\+)\d{2}[\. ]??)??3\d{2}[\. ]??\d{6,7}([\,\;]((00|\+)\d{2}[\. ]??)??3\d{2}[\. ]??\d{6,7})*$/):
+            tel.classList.add("active");
+            error.classList.add("active");
+            error.innerText = "Numero di telefono non valido";
+            return false;
+            break;
+      }
+   };
 };
 const funzione_animazioneScroll = () => {
    ScrollReveal().reveal(".animazione", {
@@ -167,4 +209,4 @@ theme();
 video();
 modale();
 funzione_animazioneScroll();
-form();
+validate();

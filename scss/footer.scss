@@ -43,6 +43,9 @@
                width: 100%;
                position: relative;
                //stile input
+               #data {
+                  cursor: pointer;
+               }
                input {
                   width: 100%;
                   outline: none;
@@ -55,17 +58,29 @@
                   letter-spacing: 0.7px;
                   border-radius: 6px;
                   text-align: center;
+                  cursor: auto;
+                  position: relative;
                   &::placeholder {
                      color: var(--text);
                   }
                }
-               span {
-                  color: hsl(0, 100%, 50%);
-                  font-size: calc(0.4rem + 0.8vmin);
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
+               input.active {
+                  border: 3px solid hsl(0, 100%, 40%);
                }
+            }
+            //span errori
+            .errore {
+               color: hsl(0, 0%, 100%);
+               font-size: calc(0.4rem + 0.8vmin);
+               margin: 0 auto;
+               background: hsl(0, 100%, 40%);
+               border-radius: 3px;
+               padding: 15px;
+               font-weight: bold;
+               visibility: hidden;
+            }
+            .errore.active {
+               visibility: visible;
             }
             //bottone send
             .bottone {

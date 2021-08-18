@@ -178,4 +178,5 @@ body[data-theme="dark"] {
   box-shadow: inset 7px 10px 12px #f0f0f0; }
 
 ::-webkit-calendar-picker-indicator {
-  background-image: var(--calendar); }
+  background-image: var(--calendar);
+  cursor: pointer; }
