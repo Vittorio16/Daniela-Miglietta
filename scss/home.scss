@@ -12,47 +12,51 @@ main {
    width: 280px;
    height: 100%;
    background: var(--header);
-   overflow: auto;
+   overflow: hidden;
    display: flex;
    flex-direction: column;
    z-index: 1000;
-   /*colore testo header*/
+   //colore testo
    h1,
+   span,
+   li,
    a,
-   p,
-   li {
+   h3,
+   i {
       color: hsl(0, 0%, 100%);
    }
-   //div info
+   //stile info
    .info {
-      margin: 10px;
-      //stile immagine profilo
+      flex: 0.75;
+      //stile img
       img {
          margin: 10px auto;
          display: block;
          width: 120px;
-         border: 6px solid var(--colore);
+         border: 6px solid var(--colore1);
          border-radius: 50%;
          transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1);
          cursor: pointer;
       }
-
-      //stile titolo e social
+      //stile text
       h1 {
          text-align: center;
       }
+      //stile social
       .social {
          display: flex;
          align-items: center;
          justify-content: center;
          flex-direction: column;
+         margin-top: 15px;
          i {
-            padding: 8px;
+            padding: 10px;
             background: var(--bg);
-            margin: 10px 5px 5px 10px;
+            margin: 12px 5px 5px 12px;
             border-radius: 8px;
             transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
             box-shadow: 1px 8px 13px 5px rgba(34, 34, 34, 0.33);
+            color: var(--text);
             &:hover {
                background: var(--text);
                color: var(--bg);
@@ -60,25 +64,49 @@ main {
          }
       }
    }
-   /*menu*/
-   ul {
+   //stile change
+   .change {
+      flex: 0.25;
       display: flex;
-      flex-direction: column;
-      padding-top: 20px;
-      li {
-         padding: 10px;
-         margin: 10px;
-         display: flex;
-         align-items: center;
-         i {
-            color: #b6b8c9;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+
+      span {
+         color: hsl(0, 0%, 100%);
+         transform: translate(-20px);
+      }
+      #light,
+      #dark {
+         padding: 20px;
+         font-size: 28px;
+         color: hsl(60, 61%, 56%);
+         cursor: pointer;
+         display: none;
+         transform: translate(-20px);
+      }
+      #light.active,
+      #dark.active {
+         display: block;
+      }
+   }
+   //stile menu
+   .menu {
+      flex: 1;
+      ul {
+         list-style: none;
+         padding: 20px;
+         li {
+            font-size: calc(0.9rem + 1.3vmin);
             font-weight: bold;
-            cursor: pointer;
-         }
-         a span {
-            margin-left: 40px;
-            color: hsl(0, 0%, 100%);
-            font-weight: 300;
+            width: 100%;
+            position: relative;
+            margin: 30px;
+            a {
+               text-align: justify;
+               margin-left: calc(1.4rem + 1.2vmin);
+               padding: 5px;
+            }
          }
       }
    }
@@ -109,29 +137,6 @@ main {
       }
    }
 }
-//cambio tema
-.change {
-   display: flex;
-   align-items: center;
-   font-weight: bold;
-   margin-top: 30px;
-   span {
-      color: hsl(0, 0%, 100%);
-   }
-   #light,
-   #dark {
-      padding: 20px;
-      font-size: 28px;
-      color: hsl(60, 61%, 56%);
-      cursor: pointer;
-      display: none;
-   }
-   #light.active,
-   #dark.active {
-      display: block;
-   }
-}
-
 //homepage
 #homepage {
    width: 100%;
