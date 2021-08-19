@@ -24,16 +24,23 @@
    .about_text {
       width: 60%;
       height: auto;
+      color: var(--text);
+      text-align: center;
       h2 {
-         text-align: center;
          font-weight: bold;
          padding: 10px;
-         color: var(--text);
       }
       p {
-         color: var(--text);
          padding: 20px;
-         text-align: justify;
+         text-align: left;
+      }
+      .proverbio {
+         padding: 35px;
+         border-radius: 3px;
+         font-weight: bold;
+         font-size: calc(0.6rem + 1.4vmin);
+         letter-spacing: 1px;
+         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
       }
    }
 }
@@ -76,13 +83,14 @@
                align-items: center;
                justify-content: center;
                margin: 15px auto 5px;
-               padding: 8px;
+               padding: 10px;
                border-radius: 3px;
                background: hsl(339, 73%, 85%);
-               width: 140px;
-               max-width: 180px;
+               width: 100%;
+               max-width: 250px;
                color: var(--bg);
                font-weight: bold;
+               text-align: center;
             }
             //stile titolo
             h3 {
