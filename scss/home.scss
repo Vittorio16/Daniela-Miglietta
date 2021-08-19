@@ -96,7 +96,6 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-
       ul {
          list-style: none;
          padding: 20px;
@@ -109,7 +108,7 @@ main {
             font-weight: bold;
             width: 100%;
             position: relative;
-            margin: 30px;
+            margin: 15px;
             a {
                text-align: justify;
                margin-left: calc(1.4rem + 1.2vmin);
@@ -271,5 +270,27 @@ main {
          position: absolute;
          top: 65vh;
       }
+   }
+}
+//media landascape
+@media (max-width: 800px) and (orientation: landscape) {
+   //STILE HEADER
+   .header {
+      width: 100%;
+      top: 10vh;
+      flex-direction: row;
+      //stile change
+      .change {
+         span {
+            display: none;
+         }
+         i {
+            margin-left: 40px;
+         }
+      }
+   }
+   //STILE HEADER MOB
+   .header-mob {
+      height: 14vh;
    }
 }
