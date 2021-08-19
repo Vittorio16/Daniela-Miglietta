@@ -71,10 +71,18 @@ main {
     .header .change #dark.active {
       display: block; }
   .header .menu {
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid red; }
     .header .menu ul {
       list-style: none;
-      padding: 20px; }
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
       .header .menu ul li {
         font-size: calc(0.9rem + 1.3vmin);
         font-weight: bold;
