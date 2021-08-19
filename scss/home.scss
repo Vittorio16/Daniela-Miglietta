@@ -96,7 +96,7 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 2px solid red;
+
       ul {
          list-style: none;
          padding: 20px;
@@ -105,7 +105,7 @@ main {
          justify-content: center;
          flex-direction: column;
          li {
-            font-size: calc(0.9rem + 1.3vmin);
+            font-size: calc(0.7rem + 1.2vmin);
             font-weight: bold;
             width: 100%;
             position: relative;
