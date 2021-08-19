@@ -47,9 +47,9 @@ main {
          justify-content: center;
          flex-direction: column;
          i {
-            padding: 9px;
+            padding: 8px;
             background: var(--bg);
-            margin: 12px;
+            margin: 10px 5px 5px 10px;
             border-radius: 8px;
             transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
             box-shadow: 1px 8px 13px 5px rgba(34, 34, 34, 0.33);
@@ -114,7 +114,7 @@ main {
    display: flex;
    align-items: center;
    font-weight: bold;
-   margin-top: 40px;
+   margin-top: 20px;
    span {
       color: hsl(0, 0%, 100%);
    }
