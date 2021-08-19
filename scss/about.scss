@@ -105,7 +105,9 @@
             //stile ul
             ul {
                padding: 20px;
-               list-style: disc;
+               list-style: none;
+               position: relative;
+
                li {
                   text-transform: uppercase;
                   font-weight: bolder;
