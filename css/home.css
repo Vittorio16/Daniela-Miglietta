@@ -208,7 +208,7 @@ main {
     position: absolute;
     top: 65vh; } }
 
-@media (max-width: 800px) and (orientation: landscape) {
+@media (max-width: 1000px) and (orientation: landscape) {
   .header {
     width: 100%;
     top: 10vh;
