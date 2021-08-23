@@ -105,13 +105,14 @@
             //stile ul
             ul {
                padding: 20px;
-               list-style: none;
+               list-style: circle;
                position: relative;
-
                li {
-                  text-transform: uppercase;
-                  font-weight: bolder;
                   margin: 10px;
+                  div {
+                     margin-left: 1.2rem;
+                     padding: 6px;
+                  }
                }
             }
          }
