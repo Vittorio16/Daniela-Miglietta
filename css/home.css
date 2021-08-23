@@ -53,7 +53,6 @@ main {
   .header .change {
     flex: 0.13;
     font-weight: bold;
-    background: var(--bg);
     margin: 30px;
     border-radius: 6px;
     position: relative; }
@@ -69,7 +68,7 @@ main {
       .header .change #light::after,
       .header .change #dark::after {
         content: "Cambio tema";
-        color: var(--text);
+        color: white;
         font-size: calc(0.5rem + 1vmin);
         margin: -2px 0 0 20px;
         font-weight: bold; }
@@ -190,8 +189,6 @@ main {
       display: none; }
     .header .info img {
       width: 90px; }
-  .header .change {
-    margin-top: 0; }
   .header ul li {
     margin: 6px; } }
 
