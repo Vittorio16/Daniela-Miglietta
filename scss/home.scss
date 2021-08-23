@@ -68,7 +68,6 @@ main {
    .change {
       flex: 0.13;
       font-weight: bold;
-      background: var(--bg);
       margin: 30px;
       border-radius: 6px;
       position: relative;
@@ -83,7 +82,7 @@ main {
          height: 100%;
          &::after {
             content: "Cambio tema";
-            color: var(--text);
+            color: hsl(0, 0%, 100%);
             font-size: calc(0.5rem + 1vmin);
             margin: -2px 0 0 20px;
             font-weight: bold;
@@ -227,7 +226,7 @@ main {
    .header {
       //aggiusto il div top con l'altezza nav
       .info {
-         padding: 6vh 0 0 0;
+         padding: 0;
          margin: 2px;
          //nascondo l'h1 (daniela miglietta)
          h1 {
@@ -238,10 +237,7 @@ main {
             width: 90px;
          }
       }
-      //aggiusto il div del cambio tema
-      .change {
-         margin-top: 0;
-      }
+
       //riduco lo spazio tra i li
       ul li {
          margin: 6px;

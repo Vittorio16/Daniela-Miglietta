@@ -183,7 +183,7 @@ main {
 
 @media (max-width: 768px) {
   .header .info {
-    padding: 6vh 0 0 0;
+    padding: 0;
     margin: 2px; }
     .header .info h1 {
       display: none; }
