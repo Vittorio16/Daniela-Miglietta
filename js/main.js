@@ -96,29 +96,87 @@ const video = () => {
    };
 };
 const modale = () => {
-   //elementi servizi
-   let servizi = document.querySelector("#servizi");
-   let buttonServizi = servizi.querySelectorAll(".ser .bottone");
-   //elemeneti modali
-   let modale = document.querySelector(".modal-hero");
-   let modaleButton = modale.querySelector(".exit");
-   //far comparire il modale
-   buttonServizi.forEach((bottone) => {
-      bottone.onclick = () => {
+   //dichiarazione oggetto per modale dinamico
+   let text = {
+      primo: {
+         title: "Calorimetria",
+         content: `Il Metabolismo basale, può essere misurato anche tramite la calorimetria diretta (camera calorimetrica).
+                   Il termine calorimetria significa letteralmente 𝗺𝗶𝘀𝘂𝗿𝗮 𝗱𝗲𝗹 𝗰𝗮𝗹𝗼𝗿𝗲 𝗰𝗼𝗺𝗲 𝗲𝗳𝗳𝗲𝘁𝘁𝗼 𝗱𝗶 𝗿𝗲𝗮𝘇𝗶𝗼𝗻𝗶 𝗯𝗶𝗼𝗰𝗵𝗶𝗺𝗶𝗰𝗵𝗲 𝗰𝗵𝗲 𝗮𝘃𝘃𝗲𝗻𝗴𝗼𝗻𝗼 𝗮𝗹𝗹’𝗶𝗻𝘁𝗲𝗿𝗻𝗼 𝗱𝗲𝗹𝗹’𝗼𝗿𝗴𝗮𝗻𝗶𝘀𝗺𝗼.
+           🔹“𝐌𝐞𝐭𝐚𝐛𝐨𝐥𝐢𝐬𝐦𝐨 𝐛𝐚𝐬𝐚𝐥𝐞”si riferisce quindi alle calorie che il soggetto necessita ed adopera quotidianamente per soddisfare tutte le funzioni fisiologiche 
+           indispensabili.
+           🔺Il corrispettivo valore non è generico per tutti gli individui, ma presenta un’alta variabilità individuale in base a diversi parametri 
+           tra cui l’età, il peso, l’altezza ed altro.
+           🔸La maggior parte delle persone in sovrappeso, può perdere peso con una dieta pari al Metabolismo misurato.`,
+      },
+      secondo: {
+         title: "Impedenziometria",
+         content: `L'𝐈𝐌𝐏𝐄𝐃𝐄𝐍𝐙𝐈𝐎𝐌𝐄𝐓𝐑𝐈𝐀 è l'UNICO esame che ci permette di individuare la percentuale si grasso, muscoli, acqua, eventuali infiammazioni, 
+         disidratazione ed altre preziose informazioni che durante un 𝐏𝐄𝐑𝐂𝐎𝐑𝐒𝐎 𝐍𝐔𝐓𝐑𝐈𝐙𝐈𝐎𝐍𝐀𝐋𝐄, ci permette di valutare la 𝐏𝐄𝐑𝐃𝐈𝐓𝐀 𝐝𝐢 𝐏𝐄𝐒𝐎 𝐢𝐧 𝐭𝐞𝐫𝐦𝐢𝐧𝐞 𝐝𝐢 𝐌𝐀𝐒𝐒𝐀 𝐆𝐑𝐀𝐒𝐒𝐀`,
+      },
+      terzo: {
+         title: "Non si sa",
+         content: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis consequatur labore unde deserunt accusantium culpa repudiandae`,
+      },
+      quarto: {
+         title: "Scopri i servizi",
+         content: `Stai per essere indirizzato su un altra pagina,relativa a tutti i servizi,
+         sei sicuro di proseguire?`,
+      },
+   };
+   //dichiarazione variabili
+   let servizi, buttonServizi, modale, modaleButton, modaleTitle, modaleContenuto;
+   servizi = document.querySelector("#servizi");
+   buttonServizi = servizi.querySelectorAll(".ser .bottone");
+   modale = document.querySelector(".modal-hero");
+   modaleButton = modale.querySelector(".exit");
+   modaleTitle = modale.querySelector(".title");
+   modaleContenuto = modale.querySelector(".contenuto");
+   //funzione relativa alla comparsa e il contenuto
+   const comparsa = () => {
+      //clicco del primo
+      buttonServizi[0].onclick = () => {
          modale.classList.add("active");
          body.classList.add("noScroll");
+         modaleTitle.innerText = text.primo.title;
+         modaleContenuto.innerText = text.primo.content;
       };
-   });
-   //far scomparire il modale
-   modaleButton.onclick = () => {
-      modale.classList.remove("active");
-      body.classList.remove("noScroll");
+      //clicco del secondo
+      buttonServizi[1].onclick = () => {
+         modale.classList.add("active");
+         body.classList.add("noScroll");
+         modaleTitle.innerText = text.secondo.title;
+         modaleContenuto.innerText = text.secondo.content;
+      };
+      //clicco del terzo
+      buttonServizi[2].onclick = () => {
+         modale.classList.add("active");
+         body.classList.add("noScroll");
+         modaleTitle.innerText = text.terzo.title;
+         modaleContenuto.innerText = text.terzo.content;
+      };
+      //clicco del quarto
+      buttonServizi[3].onclick = () => {
+         modale.classList.add("active");
+         body.classList.add("noScroll");
+         modaleTitle.innerText = text.quarto.title;
+         modaleContenuto.innerText = text.quarto.content;
+      };
    };
-   //far scomparire il modale al clicco su una parte nulla
-   modale.onclick = () => {
-      modale.classList.remove("active");
-      body.classList.remove("noScroll");
+   //funzione relativa alla  scomparsa del modale
+   const scomparsa = () => {
+      //far scomparire il modale
+      modaleButton.onclick = () => {
+         modale.classList.remove("active");
+         body.classList.remove("noScroll");
+      };
+      //far scomparire il modale al clicco su una parte nulla
+      modale.onclick = () => {
+         modale.classList.remove("active");
+         body.classList.remove("noScroll");
+      };
    };
+   comparsa();
+   scomparsa();
 };
 const form = () => {
    let name, tel, number, data, form, errore, place;
