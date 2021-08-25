@@ -198,7 +198,7 @@ main {
    }
 }
 
-/*media*/
+//media query principale
 @media (max-width: 1024px) {
    main {
       margin-left: 0; //aggiustamento main
@@ -222,6 +222,7 @@ main {
       padding: 0;
    }
 }
+//media query per telefoni
 @media (max-width: 768px) {
    .header {
       //aggiusto il div top con l'altezza nav
@@ -237,13 +238,22 @@ main {
             width: 90px;
          }
       }
-
       //riduco lo spazio tra i li
       ul li {
          margin: 6px;
       }
    }
 }
+//media query per tablet
+@media (min-width: 768px) and (max-width: 1024px) {
+   .header-mob {
+      height: 6vh; //header pù bassa
+   }
+   #homepage {
+      height: 50vh; //homepage meno alta
+   }
+}
+//media query per telefoni più piccoli
 @media (max-width: 360px) {
    .header {
       .info {
@@ -280,19 +290,45 @@ main {
    .header {
       width: 100%;
       top: 10vh;
-      flex-direction: row;
+      overflow: auto;
+      //stile div info
+      .info {
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-evenly;
+         flex: 0.3;
+         img {
+            margin: 0;
+            width: 90px;
+         }
+         .social {
+            flex-direction: row;
+            margin: 0;
+         }
+      }
       //stile change
       .change {
-         span {
-            display: none;
-         }
+         margin: 15px 0 0 0;
+         flex: 0.1;
          i {
-            margin-left: 40px;
+            align-items: center;
+            justify-content: center;
+         }
+      }
+      //stile menu
+      .menu {
+         flex: 0.3;
+         ul {
+            flex-direction: row;
+            width: 100%;
+            padding: 0;
+            margin: 0;
          }
       }
    }
    //STILE HEADER MOB
    .header-mob {
-      height: 14vh;
+      height: 12vh;
    }
 }
