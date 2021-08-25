@@ -1,6 +1,7 @@
 //FORM
 #form {
-   min-height: 100vh;
+   height: auto;
+   padding-bottom: 50px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -139,41 +140,58 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-direction: column;
+   flex-direction: row;
    padding: 10px;
-   span,
-   a,
-   i,
-   p {
-      color: var(--bg);
-      padding: 5px;
-      border-radius: 5px;
-   }
-   .social {
-      padding-top: 10px;
+   //stile informazioni
+   .informazioni {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: row;
-      a {
-         margin: 15px;
-         i {
-            font-size: 25px;
+      flex: 1;
+      padding: 10px;
+      span {
+         margin-top: 10px;
+         color: var(--bg);
+         a {
+            color: var(--bg);
          }
       }
-      .whatsapp:hover {
+   }
+   //stile social
+   .social {
+      flex: 1;
+      display: flex;
+      justify-content: start;
+      flex-direction: row;
+      flex: 1;
+      a {
+         padding: 10px;
+         margin: 10px;
+         border-radius: 6px;
+         transition: 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+         i {
+            font-size: 30px;
+            color: var(--bg);
+         }
+      }
+      a:nth-child(1):hover {
          background-color: hsl(128, 52%, 51%);
+         --bg: hsl(0, 0%, 100%);
       }
-      .instagram:hover {
+      a:nth-child(2):hover {
          background-color: hsl(351, 81%, 58%);
+         --bg: hsl(0, 0%, 100%);
       }
-      .facebook:hover {
+      a:nth-child(3):hover {
          background-color: hsl(221, 44%, 41%);
+         --bg: hsl(0, 0%, 100%);
       }
    }
 }
 //MEDIA
 @media (max-width: 768px) {
+   //stile form
    #form {
       .container {
          flex-direction: column;
@@ -195,5 +213,9 @@
             }
          }
       }
+   }
+   //stile footer
+   #footer {
+      flex-direction: column;
    }
 }
