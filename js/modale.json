@@ -1,0 +1,18 @@
+{
+    "primo" : {
+        "title" : "Calorimetria",
+         "content" : "Il Metabolismo basale, può essere misurato anche tramite la calorimetria diretta (camera calorimetrica).Il termine calorimetria significa letteralmente 𝗺𝗶𝘀𝘂𝗿𝗮 𝗱𝗲𝗹 𝗰𝗮𝗹𝗼𝗿𝗲 𝗰𝗼𝗺𝗲 𝗲𝗳𝗳𝗲𝘁𝘁𝗼 𝗱𝗶 𝗿𝗲𝗮𝘇𝗶𝗼𝗻𝗶 𝗯𝗶𝗼𝗰𝗵𝗶𝗺𝗶𝗰𝗵𝗲 𝗰𝗵𝗲 𝗮𝘃𝘃𝗲𝗻𝗴𝗼𝗻𝗼 𝗮𝗹𝗹’𝗶𝗻𝘁𝗲𝗿𝗻𝗼 𝗱𝗲𝗹𝗹’𝗼𝗿𝗴𝗮𝗻𝗶𝘀𝗺𝗼.🔹“𝐌𝐞𝐭𝐚𝐛𝐨𝐥𝐢𝐬𝐦𝐨 𝐛𝐚𝐬𝐚𝐥𝐞”si riferisce quindi alle calorie che il soggetto necessita ed adopera quotidianamente per soddisfare tutte le funzioni fisiologiche indispensabili."
+    },
+    "secondo" : {
+        "title" : "Impedenziometria",
+         "content" : "L'𝐈𝐌𝐏𝐄𝐃𝐄𝐍𝐙𝐈𝐎𝐌𝐄𝐓𝐑𝐈𝐀 è l'UNICO esame che ci permette di individuare la percentuale si grasso, muscoli, acqua, eventuali infiammazioni, disidratazione ed altre preziose informazioni che durante un 𝐏𝐄𝐑𝐂𝐎𝐑𝐒𝐎 𝐍𝐔𝐓𝐑𝐈𝐙𝐈𝐎𝐍𝐀𝐋𝐄, ci permette di valutare la 𝐏𝐄𝐑𝐃𝐈𝐓𝐀 𝐝𝐢 𝐏𝐄𝐒𝐎 𝐢𝐧 𝐭𝐞𝐫𝐦𝐢𝐧𝐞 𝐝𝐢 𝐌𝐀𝐒𝐒𝐀 𝐆𝐑𝐀𝐒𝐒𝐀"
+    },
+    "terzo" : {
+        "title" :  "Non si sa",
+         "content" : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed facilis consequatur labore unde deserunt accusantium culpa repudiandae"
+    },
+    "quarto" : {
+        "title" :  "Scopri i servizi",
+         "content" : "Stai per essere indirizzato su un altra pagina,relativa a tutti i servizi,sei sicuro di proseguire?"
+    }
+}
