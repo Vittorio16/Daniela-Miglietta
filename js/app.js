@@ -20,7 +20,7 @@ const theme = (() => {
    light = document.querySelector("#light"); //icona light
    dark = document.querySelector("#dark"); //icona dark
    //comparsa e scomparsa icona cambio tema
-   const icon = () => {
+   const icon = (() => {
       let change = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
       if (change.matches == true) {
          dark.classList.add("active");
@@ -29,9 +29,9 @@ const theme = (() => {
          dark.classList.remove("active");
          light.classList.add("active");
       }
-   };
+   })();
    //clicco delle icone per il cambio tema
-   const clickIcon = () => {
+   const clickIcon = (() => {
       //clicco bottone dark
       dark.onclick = () => {
          document.body.setAttribute("data-theme", "light");
@@ -44,9 +44,7 @@ const theme = (() => {
          light.classList.remove("active");
          dark.classList.add("active");
       };
-   };
-   icon();
-   clickIcon();
+   })();
 })();
 
 //FUNZIONE RELATIVA AL MENU
@@ -105,7 +103,7 @@ const video = (() => {
    play = document.querySelector(".play");
    close = document.querySelector("#remove");
    //clicco delle icone
-   const clickIcon = () => {
+   const clickIcon = (() => {
       //clicco pulsante play
       play.onclick = () => {
          body.classList.add("noScroll");
@@ -119,8 +117,7 @@ const video = (() => {
          container.classList.remove("active");
          video.pause();
       };
-   };
-   clickIcon();
+   })();
 })();
 
 //FUNZIONE RELATIVA AL MODALE

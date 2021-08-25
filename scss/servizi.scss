@@ -60,12 +60,13 @@
                background-size: cover;
             }
             #terzo {
-               background: url(/assets/servizi/1.webp) no-repeat center top;
+               background: url(/assets/servizi/3.webp) no-repeat center top;
                background-size: cover;
             }
             //stile content
             .content {
                color: var(--bg);
+               flex: 1.2;
                display: flex;
                align-items: center;
                justify-content: center;
@@ -89,7 +90,7 @@
             .hero-bg {
                width: 100%;
                height: 100%;
-               background: url(/assets/servizi/4.webp) no-repeat center top #585858;
+               background: url(/assets/servizi/4.jpg) no-repeat #585858;
                background-size: cover;
                background-blend-mode: multiply;
                display: flex;
@@ -139,7 +140,7 @@
          }
          //stile sezione approfondimento
          #approfondimento {
-            height: 200px;
+            height: 400px;
          }
       }
    }
