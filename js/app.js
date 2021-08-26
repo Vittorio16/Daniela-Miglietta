@@ -289,3 +289,31 @@ const animation = (() => {
       duration: 550,
    });
 })();
+
+// FUNZIONE BLOCCO TASTI
+const blocco = (() => {
+   //return false tasto destro
+   const falso = () => {
+      return false;
+   };
+   //blocco
+   const block = (blocco_tasti) => {
+      if (event.keyCode == 123) {
+         falso();
+      }
+      if (blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == "I".charCodeAt(0)) {
+         falso();
+      }
+      if (blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == "C".charCodeAt(0)) {
+         falso();
+      }
+      if (blocco_tasti.ctrlKey && blocco_tasti.shiftKey && blocco_tasti.keyCode == "J".charCodeAt(0)) {
+         falso();
+      }
+      if (blocco_tasti.ctrlKey && blocco_tasti.keyCode == "U".charCodeAt(0)) {
+         falso();
+      }
+   };
+   document.oncontextmenu = falso;
+   document.onkeydown = block;
+})();
