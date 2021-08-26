@@ -127,7 +127,6 @@ const modale = (() => {
       //dichiaro le variabili che mi permettono di accedere al json
       const response = await fetch("/js/modale.json");
       const text = await response.json();
-
       //dichiaro le variabili
       let servizi, buttonServizi, modale, modaleButton, modaleTitle, modaleContenuto;
       servizi = document.querySelector("#servizi");
