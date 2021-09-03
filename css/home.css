@@ -160,25 +160,32 @@ main {
    justify-content: center;
    flex-direction: column;
 }
-#homepage .hero h1 {
-   padding: 30px;
+#homepage .hero div{
+   margin-bottom: 15vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+#homepage .hero div h1 {
+   padding: 5px;
    font-weight: bold;
    letter-spacing: 1px;
-   text-align: center;
 }
-#homepage .hero p {
-   padding: 10px;
+#homepage .hero div p {
+   padding: 5px;
    line-height: 2rem;
    letter-spacing: 2px;
    font-weight: 400;
+   text-align: center;
 }
-#homepage .hero p span {
+#homepage .hero div p span {
    font-weight: bold;
    color: var(--colore1);
    margin-bottom: 5px;
    border-bottom: 4px solid var(--colore1);
 }
-#homepage .hero .button-hero {
+#homepage .hero div .button-hero {
    padding: 15px;
    width: 300px;
    max-width: 220px;
@@ -228,6 +235,10 @@ main {
    .header ul li {
       margin: 6px;
    }
+   #homepage .hero div{
+      margin-bottom: 0;
+   }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
